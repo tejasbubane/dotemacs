@@ -27,21 +27,26 @@
 ;; Powerline
 (require 'powerline)
 
+;; Transparent Emacs
+(set-frame-parameter (selected-frame) 'alpha '(85 50))
+(add-to-list 'default-frame-alist '(alpha 85 50))
+(defun toggle-transparency ()
+  (interactive)
+  (if (/=
+       (cadr (frame-parameter nil 'alpha))
+       100)
+      (set-frame-parameter nil 'alpha '(100 100))
+    (set-frame-parameter nil 'alpha '(85 50))))
+(global-set-key (kbd "C-c t") 'toggle-transparency)
+
 ;; Magit
 (require 'magit)
 (eval-after-load 'magit
   (progn '(global-set-key (kbd "C-x g") 'magit-status)))
 
-;; Enhanced Ruby Mode
-(add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Rakefile$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.gemspec$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.ru$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
-(add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
-(setq enh-ruby-bounce-deep-indent t)
-(setq enh-ruby-hanging-brace-indent-level 2)
+;; Ruby Mode
+(add-to-list 'auto-mode-alist '("\\.\\(rb\\|ru\\|builder\\|rake\\|thor\\|gemspec\\)\\'" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\(rake\\|thor\\|guard\\|gem\\|cap\\|vagrant\\)file\\'" . ruby-mode))
 
 ;; Auto-complete mode
 (require 'auto-complete-config)
@@ -53,20 +58,21 @@
 (add-to-list 'ac-modes 'python-mode)
 
 ;; Projectile mode
-(require 'grizzl)
 (projectile-global-mode +1)
-(setq projectile-indexing-method 'git)
-(setq projectile-completion-system 'grizzl)
-;; Press Command-p for fuzzy find in project
-(global-set-key (kbd "s-p") 'projectile-find-file)
-;; Press Command-b for fuzzy switch buffer
-(global-set-key (kbd "s-b") 'projectile-switch-to-buffer)
+(require 'flx-ido)
+(ido-mode 1)
+(ido-everywhere 1)
+(flx-ido-mode 1)
+(setq ido-use-faces nil) ;; disable ido faces to see flx highlights.
 
-;;(require 'flx-ido)
-;;(ido-mode 1)
-;;(ido-everywhere 1)
-;;(flx-ido-mode 1)
-;;(setq ido-use-faces nil) ;; disable ido faces to see flx highlights.
+;; Use grizzle with projectile (comment the ido stuff above and uncomment this)
+;; (require 'grizzl)
+;; (setq projectile-indexing-method 'git)
+;; (setq projectile-completion-system 'grizzl)
+;; ;; Press Command-p for fuzzy find in project
+;; (global-set-key (kbd "s-p") 'projectile-find-file)
+;; ;; Press Command-b for fuzzy switch buffer
+;; (global-set-key (kbd "s-b") 'projectile-switch-to-buffer)
 
 ;; Highlight-indentation
 (require 'highlight-indentation)
@@ -84,3 +90,22 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+;; Smooth scroll mode with in-place-scroll (M-up/down)
+(require 'smooth-scroll)
+(smooth-scroll-mode t)
+(setq scroll-step 1) ;; keyboard scroll one line at a time
+(global-set-key [(meta  down)]  'scroll-up-1)
+(global-set-key [(meta  up)]    'scroll-down-1)
+
+;; Rinari mode for Rails
+(require 'rinari)
+(global-rinari-mode)
+;; RVM
+(rvm-use-default)
+
+;; YARI shorthand
+(define-key 'help-command "R" 'yari)
+
+;; delete trailing whitespaces
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
