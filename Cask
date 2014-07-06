@@ -24,6 +24,8 @@
 (depends-on "rinari")
 (depends-on "rvm")
 (depends-on "s")
+(depends-on "sbt-mode")
+(depends-on "scala-mode2")
 (depends-on "smex")
 (depends-on "smooth-scroll")
 (depends-on "soft-morning-theme")
