@@ -109,3 +109,8 @@
 
 ;; delete trailing whitespaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; highlight current line
+(global-hl-line-mode 1)
+(set-face-foreground 'highlight nil)
+(set-face-background 'hl-line "#3e4446")
