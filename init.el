@@ -114,3 +114,7 @@
 (global-hl-line-mode 1)
 (set-face-foreground 'highlight nil)
 (set-face-background 'hl-line "#3e4446")
+
+;; Uniquify to distinguish buffers with same name
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward)
