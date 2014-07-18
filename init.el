@@ -142,3 +142,12 @@
 (add-hook 'robe-mode-hook 'ac-robe-setup)
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
   (rvm-activate-corresponding-ruby))
+
+;; highlight current line
+;; (global-hl-line-mode 1)
+;; (set-face-foreground 'highlight nil)
+;; (set-face-background 'hl-line "#3e4446")
+
+;; Uniquify to distinguish buffers with same name
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward)
