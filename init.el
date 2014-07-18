@@ -48,17 +48,32 @@
 (add-to-list 'auto-mode-alist '("\\.\\(rb\\|ru\\|builder\\|rake\\|thor\\|gemspec\\)\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\(rake\\|thor\\|guard\\|gem\\|cap\\|vagrant\\)file\\'" . ruby-mode))
 
+;; yasnippet
+(require 'yasnippet)
+(setq yas/root-directory "/home/tech-6/.emacs.d/.cask/24.3.1/elpa/yasnippet-20140314.255/snippets")
+(yas-global-mode 1)
+(yas/reload-all)
+
 ;; Auto-complete mode
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/.cask/24.3.1/elpa/auto-complete-20140208.653/dict")
 (ac-config-default)
 (setq ac-ignore-case nil)
-(add-to-list 'ac-modes 'enh-ruby-mode)
+(add-to-list 'ac-modes 'ruby-mode)
 (add-to-list 'ac-modes 'web-mode)
 (add-to-list 'ac-modes 'python-mode)
+(add-to-list 'ac-modes 'css-mode)
+(add-to-list 'ac-modes 'javascript-mode)
+(add-to-list 'ac-modes 'sh-mode)
+
+;; silversearcher - ag
+;; replacement for ack-grep
+(setq ag-highlight-search t)
+(global-set-key (kbd "C-c . a g") 'ag)
+(setq ag-reuse-buffers 't)
 
 ;; Projectile mode
-(projectile-global-mode +1)
+;; (projectile-global-mode +1)
 (require 'flx-ido)
 (ido-mode 1)
 (ido-everywhere 1)
@@ -110,7 +125,20 @@
 ;; delete trailing whitespaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-;; highlight current line
-(global-hl-line-mode 1)
-(set-face-foreground 'highlight nil)
-(set-face-background 'hl-line "#3e4446")
+;; ;; Rsense
+;; (setq rsense-home "/opt/rsense-0.3")
+;; (add-to-list 'load-path (concat rsense-home "/etc"))
+;; (require 'rsense)
+;; (global-set-key (kbd "C-c . w") 'rsense-where-is)
+;; (global-set-key (kbd "C-c . j") 'rsense-jump-to-definition)
+
+;; ;; Rsense + Autocomplete
+;; (add-hook 'ruby-mode-hook
+;;           (lambda ()
+;;             (add-to-list 'ac-sources 'ac-source-rsense-method)
+;;             (add-to-list 'ac-sources 'ac-source-rsense-constant)))
+
+(add-hook 'ruby-mode-hook 'robe-mode)
+(add-hook 'robe-mode-hook 'ac-robe-setup)
+(defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
+  (rvm-activate-corresponding-ruby))
