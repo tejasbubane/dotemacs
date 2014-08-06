@@ -39,6 +39,9 @@
     (set-frame-parameter nil 'alpha '(85 50))))
 (global-set-key (kbd "C-c t") 'toggle-transparency)
 
+;; comment region
+(global-set-key (kbd "C-c c") 'comment-region)
+
 ;; Magit
 (require 'magit)
 (eval-after-load 'magit
@@ -151,3 +154,6 @@
 ;; Uniquify to distinguish buffers with same name
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward)
+
+;; Golden Ratio Mode
+(golden-ratio-mode 1)
