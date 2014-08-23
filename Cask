@@ -18,6 +18,7 @@
 (depends-on "expand-region")
 (depends-on "f")
 (depends-on "feature-mode")
+(depends-on "fill-column-indicator")
 (depends-on "findr")
 (depends-on "flx")
 (depends-on "flx-ido")
