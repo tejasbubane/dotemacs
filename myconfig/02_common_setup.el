@@ -29,3 +29,5 @@
 (setq fci-style 'shading)
 (setq fci-rule-column 80)
 (setq fci-rule-width 4)
+
+(powerline-default-theme)
