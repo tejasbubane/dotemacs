@@ -23,11 +23,4 @@
 
 (set-language-environment "UTF-8")
 
-;; the sacred 80 characters
-(define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
-(global-fci-mode 1)
-(setq fci-style 'shading)
-(setq fci-rule-column 80)
-(setq fci-rule-width 4)
-
 (powerline-default-theme)

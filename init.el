@@ -11,10 +11,12 @@
 (load "02_common_setup.el")
 (load "03_theme_font.el")
 (load "04_transparent_emacs.el")
+(load "06_fci_mode.el")
 (load "05_ido_mode.el")
-(load "06_flyspell.el")
 (load "07_recentf_mode.el")
 (load "08_yasnippet_mode.el")
 (load "09_autocomplete_mode.el")
 (load "10_silver_searcher.el")
 (load "11_ruby_mode.el")
+
+;;; init.el ends here

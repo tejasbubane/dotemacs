@@ -2,10 +2,6 @@
 
 (add-to-list 'auto-mode-alist '("\\.\\(rb\\|ru\\|builder\\|rake\\|thor\\|gemspec\\)\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\(rake\\|thor\\|guard\\|gem\\|cap\\|vagrant\\)file\\'" . ruby-mode))
-;; Highlight-indentation
-(require 'highlight-indentation)
-(add-hook 'enh-ruby-mode-hook
-	  (lambda () (highlight-indentation-current-column-mode)))
 
 ;; Rinari mode for Rails
 (require 'rinari)
@@ -20,3 +16,10 @@
 (add-hook 'robe-mode-hook 'ac-robe-setup)
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
   (rvm-activate-corresponding-ruby))
+
+;; Highlight-indentation
+(require 'highlight-indentation)
+(add-hook 'ruby-mode-hook
+	  (lambda () (highlight-indentation-current-column-mode)))
+(add-hook 'ruby-mode-hook
+	  (lambda () (flycheck-mode)))

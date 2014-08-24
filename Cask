@@ -22,6 +22,7 @@
 (depends-on "findr")
 (depends-on "flx")
 (depends-on "flx-ido")
+(depends-on "flycheck")
 (depends-on "flyspell-lazy")
 (depends-on "git-commit-mode")
 (depends-on "git-rebase-mode")
