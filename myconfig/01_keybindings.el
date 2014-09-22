@@ -9,4 +9,4 @@
 
 (global-set-key (kbd "C-c m") 'magit-status)
 
-;; (define-key yas-minor-mode-map (kbd "<C-tab>")     'yas-ido-expand)
+(global-set-key (kbd "C-c h") 'ruby-toggle-hash-syntax)

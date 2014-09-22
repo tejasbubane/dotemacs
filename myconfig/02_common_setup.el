@@ -10,6 +10,7 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace) ;; delete trailing whitespaces
 
+(require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward)
 
 ;; To avoid file system clutter we put all auto saved files in a single directory.
@@ -24,3 +25,7 @@
 (set-language-environment "UTF-8")
 
 (powerline-default-theme)
+
+(require 'sublimity)
+(require 'sublimity-scroll)
+(sublimity-mode 1)

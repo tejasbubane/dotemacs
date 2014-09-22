@@ -21,5 +21,6 @@
 (require 'highlight-indentation)
 (add-hook 'ruby-mode-hook
 	  (lambda () (highlight-indentation-current-column-mode)))
-(add-hook 'ruby-mode-hook
-	  (lambda () (flycheck-mode)))
+
+;; ruby-tools for string-symbol helpers
+(add-hook 'ruby-mode-hook 'ruby-tools-mode)
