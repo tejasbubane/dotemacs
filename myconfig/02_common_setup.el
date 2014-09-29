@@ -6,8 +6,6 @@
 (setq user-full-name "Tejas Bubane"
       user-mail-address "tejasbubane@gmail.com")
 
-(golden-ratio-mode 1) ;; Always use Golden Ratio Mode for split screen
-
 (add-hook 'before-save-hook 'delete-trailing-whitespace) ;; delete trailing whitespaces
 
 (require 'uniquify)
