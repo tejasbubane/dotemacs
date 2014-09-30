@@ -1,5 +1,7 @@
 ;; Some random configuration
 
+(server-start)
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq inhibit-startup-screen t) ; don't show the startup screen
 
