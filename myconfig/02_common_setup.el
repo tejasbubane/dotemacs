@@ -29,3 +29,5 @@
 (require 'sublimity)
 (require 'sublimity-scroll)
 (sublimity-mode 1)
+
+(setq require-final-newline t)
