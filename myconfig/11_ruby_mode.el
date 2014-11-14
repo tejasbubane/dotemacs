@@ -14,6 +14,7 @@
 
 (add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'robe-mode-hook 'ac-robe-setup)
+(add-hook 'robe-mode-hook 'flycheck-mode)
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
   (rvm-activate-corresponding-ruby))
 
