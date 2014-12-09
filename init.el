@@ -19,5 +19,6 @@
 (load "10_silver_searcher.el")
 (load "11_ruby_mode.el")
 (load "12_web_mode.el")
+(load "13_coffee_mode.el")
 
 ;;; init.el ends here
