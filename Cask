@@ -34,6 +34,7 @@
 (depends-on "golden-ratio")
 (depends-on "grizzl")
 (depends-on "haml-mode")
+(depends-on "haskell-mode")
 (depends-on "highlight-indentation")
 (depends-on "ido-vertical-mode")
 (depends-on "inf-ruby")
