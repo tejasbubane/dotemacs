@@ -24,6 +24,7 @@
 (depends-on "flx")
 (depends-on "flx-ido")
 (depends-on "flycheck")
+(depends-on "flymake-haml")
 (depends-on "flyspell-lazy")
 (depends-on "git-commit-mode")
 (depends-on "git-rebase-mode")
