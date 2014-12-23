@@ -20,5 +20,6 @@
 (load "11_ruby_mode.el")
 (load "12_web_mode.el")
 (load "13_coffee_mode.el")
+(load "14_sh_mode.el")
 
 ;;; init.el ends here
