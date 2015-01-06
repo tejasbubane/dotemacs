@@ -56,6 +56,7 @@
 (depends-on "powerline")
 (depends-on "projectile")
 (depends-on "rainbow-mode")
+(depends-on "restclient")
 (depends-on "rhtml-mode")
 (depends-on "rinari")
 (depends-on "robe")
