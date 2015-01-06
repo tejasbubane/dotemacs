@@ -22,5 +22,6 @@
 (load "13_coffee_mode.el")
 (load "14_sh_mode.el")
 (load "15_restclient_mode.el")
+(load "16_markdown_mode.el")
 
 ;;; init.el ends here
