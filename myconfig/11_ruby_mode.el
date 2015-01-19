@@ -15,8 +15,6 @@
 (add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'robe-mode-hook 'ac-robe-setup)
 (add-hook 'robe-mode-hook 'flycheck-mode)
-(defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
-  (rvm-activate-corresponding-ruby))
 
 ;; Highlight-indentation
 (require 'highlight-indentation)
@@ -25,3 +23,7 @@
 
 ;; ruby-tools for string-symbol helpers
 (add-hook 'ruby-mode-hook 'ruby-tools-mode)
+
+;; use proper rvm from the directory
+(add-hook 'ruby-mode-hook
+          (lambda () (rvm-activate-corresponding-ruby)))
