@@ -1,0 +1,7 @@
+Use projectile instead of rinari.
+
+I moved all my gems to vendor after reading
+http://ryan.mcgeary.org/2011/02/09/vendor-everything-still-applies/
+And Rinari went horribly slow on find-files since it started scanning
+vendor directory as well. I tried projectile and it was blazing fast!
+Moving to projectile now and its good.
