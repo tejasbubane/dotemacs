@@ -31,3 +31,6 @@
 (sublimity-mode 1)
 
 (setq require-final-newline t)
+
+;; projectile-mode
+(projectile-global-mode)

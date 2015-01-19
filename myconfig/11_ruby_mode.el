@@ -3,9 +3,6 @@
 (add-to-list 'auto-mode-alist '("\\.\\(rb\\|ru\\|builder\\|rake\\|thor\\|gemspec\\)\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\(rake\\|thor\\|guard\\|gem\\|cap\\|vagrant\\)file\\'" . ruby-mode))
 
-;; Rinari mode for Rails
-(require 'rinari)
-(global-rinari-mode)
 ;; RVM
 (rvm-use-default)
 
