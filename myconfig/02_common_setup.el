@@ -34,3 +34,7 @@
 
 ;; projectile-mode
 (projectile-global-mode)
+
+;; add custom paths to exec-path
+(add-to-list 'exec-path "~/bin")
+(add-to-list 'exec-path "/usr/sbin")
