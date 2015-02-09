@@ -9,5 +9,5 @@
 		  ,(rx (or "#" "=begin"))                        ; Comment start
 		  ruby-forward-sexp nil)))
 
-(global-set-key (kbd "C-c h") 'hs-hide-block)
-(global-set-key (kbd "C-c s") 'hs-show-block)
+(global-set-key (kbd "C-c C-c h") 'hs-hide-block)
+(global-set-key (kbd "C-c C-c s") 'hs-show-block)
