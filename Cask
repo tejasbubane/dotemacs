@@ -5,6 +5,7 @@
 (depends-on "ack-and-a-half")
 (depends-on "ag")
 (depends-on "ansi")
+(depends-on "anzu")
 (depends-on "auto-complete")
 (depends-on "cask")
 (depends-on "coffee-mode")

@@ -24,5 +24,6 @@
 (load "15_restclient_mode.el")
 (load "16_markdown_mode.el")
 (load "17_hs_mode.el")
+(load "18_anzu_mode.el")
 
 ;;; init.el ends here
