@@ -8,3 +8,4 @@ bookmarks
 eshell
 session*
 autosaves/*
+*.elc
