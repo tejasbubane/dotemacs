@@ -1,17 +1,13 @@
 ;; Some random configuration
 
-(server-start)
-
-(defalias 'yes-or-no-p 'y-or-n-p)
-(setq inhibit-startup-screen t) ; don't show the startup screen
-
 (setq user-full-name "Tejas Bubane"
       user-mail-address "tejasbubane@gmail.com")
 
-(add-hook 'before-save-hook 'delete-trailing-whitespace) ;; delete trailing whitespaces
+(load "server")
+(unless (server-running-p) (server-start))
 
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'post-forward)
+(add-hook 'before-save-hook 'delete-trailing-whitespace) ;; delete trailing whitespaces
+(setq require-final-newline t) ;; There should be a newline at the end of every file I save
 
 ;; To avoid file system clutter we put all auto saved files in a single directory.
 (defvar emacs-autosave-directory
@@ -22,15 +18,15 @@
       auto-save-file-name-transforms
       `((".*" ,emacs-autosave-directory t)))
 
+;; UTF-8 please
+(setq locale-coding-system 'utf-8) ; pretty
+(set-terminal-coding-system 'utf-8) ; pretty
+(set-keyboard-coding-system 'utf-8) ; pretty
+(set-selection-coding-system 'utf-8) ; please
+(prefer-coding-system 'utf-8) ; with sugar on top
 (set-language-environment "UTF-8")
 
 (powerline-default-theme)
-
-(require 'sublimity)
-(require 'sublimity-scroll)
-(sublimity-mode 1)
-
-(setq require-final-newline t)
 
 ;; projectile-mode
 (projectile-global-mode)
@@ -38,3 +34,5 @@
 ;; add custom paths to exec-path
 (add-to-list 'exec-path "~/bin")
 (add-to-list 'exec-path "/usr/sbin")
+
+(defalias 'yes-or-no-p 'y-or-n-p) ;; shorthands for yes and no

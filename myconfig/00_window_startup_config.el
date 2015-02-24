@@ -1,5 +1,7 @@
 ;; Disable all unnecessary modes and enable all the cool stuff
 
+(setq inhibit-startup-screen t) ; don't show the startup screen
+
 (dolist (mode
          '(tool-bar-mode              ; No toolbars, more room for text.
            scroll-bar-mode            ; No scroll bars either.

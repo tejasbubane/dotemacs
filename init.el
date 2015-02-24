@@ -25,5 +25,7 @@
 (load "16_markdown_mode.el")
 (load "17_hs_mode.el")
 (load "18_anzu_mode.el")
+(load "19_sublimity_mode.el")
+(load "20_uniquify_mode.el")
 
 ;;; init.el ends here
