@@ -1,31 +1,17 @@
 ;; Package Manager
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
+
 ;; Pallet keeps Cask file in sync with packages installed by package-install
 (require 'pallet)
 
 ;; Load all config files
-(add-to-list 'load-path "~/.emacs.d/myconfig")
-(load "00_window_startup_config.el")
-(load "01_keybindings.el")
-(load "02_common_setup.el")
-(load "03_theme_font.el")
-(load "04_transparent_emacs.el")
-(load "05_ido_mode.el")
-(load "06_fci_mode.el")
-(load "07_recentf_mode.el")
-(load "08_yasnippet_mode.el")
-(load "09_autocomplete_mode.el")
-(load "10_silver_searcher.el")
-(load "11_ruby_mode.el")
-(load "12_web_mode.el")
-(load "13_coffee_mode.el")
-(load "14_sh_mode.el")
-(load "15_restclient_mode.el")
-(load "16_markdown_mode.el")
-(load "17_hs_mode.el")
-(load "18_anzu_mode.el")
-(load "19_sublimity_mode.el")
-(load "20_uniquify_mode.el")
+(setq root-dir "~/.emacs.d")
+(setq myconfig (concat root-dir "/myconfig"))
+(add-to-list 'load-path myconfig)
+
+(mapcar 'load (directory-files myconfig t "\\.el\\'"))
+
+(add-to-list 'load-path "~/.emacs.d/vendor") ;; third party plugins
 
 ;;; init.el ends here

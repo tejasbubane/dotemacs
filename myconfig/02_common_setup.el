@@ -32,7 +32,7 @@
 (projectile-global-mode)
 
 ;; add custom paths to exec-path
-(add-to-list 'exec-path "~/bin")
-(add-to-list 'exec-path "/usr/sbin")
+(setq exec-path (append exec-path '("~/bin")))
+(setq exec-path (append exec-path '("/usr/sbin")))
 
 (defalias 'yes-or-no-p 'y-or-n-p) ;; shorthands for yes and no
