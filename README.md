@@ -1,22 +1,63 @@
-Usage
------
+# Usage
 
 * Clone this repository in your home folder and rename it .emacs.d
 * cd into ~/.emacs.d and run
 
->    cask install
+```bash
+cask install
+```
 
-Credits
--------
+# Language Specifics
+
+### Ruby
+
+* `rvm and ruby`
+https://rvm.io/rvm/install
+
+### GoLang
+
+* `GOPATH`
+This config assumes that all go code resides in `~/gocode`
+
+* `godef`: quickly jump around the code
+
+```bash
+go get -v code.google.com/p/rog-go/exp/cmd/godef
+go install -v code.google.com/p/rog-go/exp/cmd/godef
+```
+
+* `gocode`: Go aware Autocomplete
+
+```bash
+go get -u -v github.com/nsf/gocode
+```
+
+* `godoc`: shows the go documentation for a given package
+
+```bash
+go get code.google.com/p/go.tools/cmd/godoc
+```
+
+* Copy all above binaries from `$GOPATH/bin` to `~/bin` (Some weird exec-path issue)
+
+
+# Credits
+
 My config is inspired from these resources :
 
-Cask and Pallet:
+* Cask and Pallet:
 http://www.swaroopch.com/2013/10/17/emacs-configuration-tutorial/
 
-Ruby and Rails:
+* Ruby and Rails:
 http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/
 
-General config (Theme, font, window-config, etc):
+* General config (Theme, font, window-config, etc):
 https://github.com/larstvei/dot-emacs
 
-And some others I don't bother recollecting.
+* GoLang:
+http://tleyden.github.io/blog/2014/05/22/configure-emacs-as-a-go-editor-from-scratch/
+
+* Prathamesh's dotemacs:
+https://github.com/prathamesh-sonpatki/dotemacs
+
+And some others I can't recollect.
