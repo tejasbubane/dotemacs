@@ -9,3 +9,5 @@ eshell
 session*
 autosaves/*
 *.elc
+
+jabber-history/
