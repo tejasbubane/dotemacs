@@ -62,7 +62,6 @@
 (depends-on "restclient")
 (depends-on "rhtml-mode")
 (depends-on "rinari")
-(depends-on "robe")
 (depends-on "rspec-mode")
 (depends-on "ruby-block")
 (depends-on "ruby-compilation")
