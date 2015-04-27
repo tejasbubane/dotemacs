@@ -68,3 +68,11 @@ http://tleyden.github.io/blog/2014/05/22/configure-emacs-as-a-go-editor-from-scr
 https://github.com/prathamesh-sonpatki/dotemacs
 
 And some others I can't recollect.
+
+
+Blog: [http://foss-geek.blogspot.in/](http://foss-geek.blogspot.in/)
+
+Twitter: [@tejasbubane](https://twitter.com/tejasbubane)
+
+[![](http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png)](https://in.linkedin.com/in/tejasbubane)
+[![](http://api.coderwall.com/purcell/endorsecount.png)](http://coderwall.com/tejasbubane)
