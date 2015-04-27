@@ -11,3 +11,7 @@ autosaves/*
 *.elc
 
 jabber-history/
+
+ido.last
+recentf
+smex-items
