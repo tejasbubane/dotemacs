@@ -28,9 +28,6 @@
 
 (powerline-default-theme)
 
-;; projectile-mode
-(projectile-global-mode)
-
 ;; add custom paths to exec-path
 (setq exec-path (append exec-path '("~/bin")))
 (setq exec-path (append exec-path '("/usr/sbin")))

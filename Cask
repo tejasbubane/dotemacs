@@ -58,6 +58,7 @@
 (depends-on "popwin")
 (depends-on "powerline")
 (depends-on "projectile")
+(depends-on "projectile-rails")
 (depends-on "rainbow-mode")
 (depends-on "restclient")
 (depends-on "rhtml-mode")
