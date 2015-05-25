@@ -84,3 +84,4 @@
 (depends-on "yaml-mode")
 (depends-on "yari")
 (depends-on "yasnippet")
+(depends-on "elixir-mode")
