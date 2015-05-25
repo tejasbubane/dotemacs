@@ -9,6 +9,8 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace) ;; delete trailing whitespaces
 (setq require-final-newline t) ;; There should be a newline at the end of every file I save
 
+(setq-default indent-tabs-mode nil) ;; never use tabs for indentation
+
 ;; To avoid file system clutter we put all auto saved files in a single directory.
 (defvar emacs-autosave-directory
   (concat user-emacs-directory "autosaves/"))
