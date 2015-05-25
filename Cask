@@ -1,7 +1,6 @@
 (source gnu)
 (source melpa)
 
-(depends-on "ack-and-a-half")
 (depends-on "ag")
 (depends-on "ansi")
 (depends-on "anzu")
