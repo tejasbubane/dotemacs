@@ -10,6 +10,7 @@
 (setq myconfig (concat root-dir "/myconfig"))
 (add-to-list 'load-path myconfig)
 
+;; load all files from myconfig directory
 (mapcar 'load (directory-files myconfig t "\\.el\\'"))
 
 (add-to-list 'load-path "~/.emacs.d/vendor") ;; third party plugins

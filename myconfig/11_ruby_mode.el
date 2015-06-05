@@ -24,3 +24,7 @@
 ;; use proper rvm from the directory
 (add-hook 'ruby-mode-hook
           (lambda () (rvm-activate-corresponding-ruby)))
+
+;; evaluating ruby code inside buffer (like playgound)
+(require 'rcodetools)
+(global-set-key (kbd "C-c C-e") 'xmp)
