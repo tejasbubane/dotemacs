@@ -11,8 +11,9 @@
 (add-to-list 'load-path myconfig)
 
 ;; load all files from myconfig directory
+(add-to-list 'load-path "~/.emacs.d/vendor") ;; third party plugins
+
 (mapcar 'load (directory-files myconfig t "\\.el\\'"))
 
-(add-to-list 'load-path "~/.emacs.d/vendor") ;; third party plugins
 
 ;;; init.el ends here
