@@ -20,6 +20,11 @@
       auto-save-file-name-transforms
       `((".*" ,emacs-autosave-directory t)))
 
+;; Save my position in a file over sessions
+(require 'saveplace)
+(setq-default save-place t)
+(setq save-place-file (expand-file-name ".places" user-emacs-directory))
+
 ;; UTF-8 please
 (setq locale-coding-system 'utf-8) ; pretty
 (set-terminal-coding-system 'utf-8) ; pretty
