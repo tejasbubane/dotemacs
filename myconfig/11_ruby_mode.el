@@ -12,6 +12,7 @@
 (add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'robe-mode-hook 'ac-robe-setup)
 (add-hook 'robe-mode-hook 'flycheck-mode)
+(add-hook 'ruby-mode-hook 'projectile-rails-mode)
 
 ;; Highlight-indentation
 (require 'highlight-indentation)
