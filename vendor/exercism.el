@@ -221,7 +221,9 @@ Optionally pass ARG, for a result."
   (interactive)
   (let ((language (read-from-minibuffer "Language: "))
         (problem (read-from-minibuffer "Problem: ")))
-    (execute-command (format "open %s %s" language problem))))
+    (message "Result: %s"
+             (execute-command (format "open %s %s" language problem)))))
+
 
 (provide 'exercism)
 ;;; exercism.el ends here
