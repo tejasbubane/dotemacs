@@ -83,3 +83,5 @@
 (depends-on "yari")
 (depends-on "yasnippet")
 (depends-on "elixir-mode")
+(depends-on "minitest")
+(depends-on "request")
