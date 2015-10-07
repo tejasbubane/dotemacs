@@ -1,5 +1,10 @@
 ;; Package Manager
-(require 'cask "~/.cask/cask.el")
+
+(cond
+ ((string-equal system-type "darwin") ; for OS X
+  (require 'cask "/usr/local/share/emacs/site-lisp/cask/cask.el"))
+ ((string-equal system-type "gnu/linux") ; for Linux
+  (require 'cask "~/.cask/cask.el")))
 (cask-initialize)
 
 ;; Pallet keeps Cask file in sync with packages installed by package-install
