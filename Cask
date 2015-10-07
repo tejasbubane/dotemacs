@@ -85,3 +85,5 @@
 (depends-on "elixir-mode")
 (depends-on "minitest")
 (depends-on "request")
+(depends-on "robe")
+(depends-on "rubocop")
