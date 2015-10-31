@@ -9,6 +9,7 @@
 
 ;; Pallet keeps Cask file in sync with packages installed by package-install
 (require 'pallet)
+(pallet-mode t)
 
 ;; Load all config files
 (setq root-dir "~/.emacs.d")
