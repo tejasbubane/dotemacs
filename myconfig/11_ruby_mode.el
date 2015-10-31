@@ -13,7 +13,6 @@
 (add-hook 'robe-mode-hook 'ac-robe-setup)
 (add-hook 'robe-mode-hook 'flycheck-mode)
 (add-hook 'ruby-mode-hook 'projectile-rails-mode)
-(add-hook 'ruby-mode-hook 'rubocop-mode)
 
 ;; Highlight-indentation
 (require 'highlight-indentation)
@@ -30,3 +29,9 @@
 ;; evaluating ruby code inside buffer (like playgound)
 (require 'rcodetools)
 (global-set-key (kbd "C-c C-e") 'xmp)
+
+(defun insert-pry ()
+  (interactive)
+  (insert "binding.pry"))
+
+(global-set-key (kbd "C-c d") 'insert-pry)
