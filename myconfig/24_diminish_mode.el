@@ -6,6 +6,11 @@
 (eval-after-load "rainbow-mode" '(diminish 'rainbow-mode))
 (eval-after-load "projectile" '(diminish 'projectile-mode))
 (eval-after-load "anzu" '(diminish 'anzu-mode))
+(eval-after-load "flycheck" '(diminish 'flycheck-mode))
+(eval-after-load "robe" '(diminish 'robe-mode))
+(eval-after-load "hideshow" '(diminish 'hs-minor-mode))
+(eval-after-load "ruby-end" '(diminish 'ruby-end-mode))
+(eval-after-load "ruby-tools" '(diminish 'ruby-tools-mode))
 (eval-after-load "whitespace"
   '(diminish 'global-whitespace-mode))
 (eval-after-load "global-auto-complete"
