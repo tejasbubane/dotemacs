@@ -51,6 +51,7 @@
 (depends-on "markdown-mode+")
 (depends-on "minitest")
 (depends-on "monokai-theme")
+(depends-on "multi-term")
 (depends-on "multiple-cursors")
 (depends-on "nginx-mode")
 (depends-on "noflet")
