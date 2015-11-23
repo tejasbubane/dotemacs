@@ -35,3 +35,9 @@
   (insert "binding.pry"))
 
 (global-set-key (kbd "C-c d") 'insert-pry)
+
+;; Align chained method calls
+;; eg.   User.something
+;;           .something_else
+(setq ruby-use-smie 't)
+(setq ruby-align-chained-calls 't)
