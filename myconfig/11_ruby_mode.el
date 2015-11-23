@@ -41,3 +41,6 @@
 ;;           .something_else
 (setq ruby-use-smie 't)
 (setq ruby-align-chained-calls 't)
+
+;; Need line numbers in Rspec files
+(add-hook 'rspec-mode-hook 'linum-mode)
