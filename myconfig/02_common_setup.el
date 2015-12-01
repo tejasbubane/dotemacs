@@ -41,8 +41,5 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p) ;; shorthands for yes and no
 
-;; Save session info and open buffers from previous session
-(desktop-save-mode 1)
-
 ;; follow symlinks by default
 (setq vc-follow-symlinks 't)
