@@ -27,6 +27,8 @@
 (depends-on "flx-ido")
 (depends-on "flycheck")
 (depends-on "flymake-haml")
+(depends-on "flymake-jslint")
+(depends-on "flymake-json")
 (depends-on "flyspell-lazy")
 (depends-on "git-commit")
 (depends-on "go-autocomplete")
