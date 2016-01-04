@@ -10,3 +10,4 @@
 (add-to-list 'ac-modes 'css-mode)
 (add-to-list 'ac-modes 'javascript-mode)
 (add-to-list 'ac-modes 'sh-mode)
+(global-auto-complete-mode)
