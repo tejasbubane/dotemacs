@@ -90,6 +90,7 @@
 (depends-on "sml-mode")
 (depends-on "string-utils")
 (depends-on "sublimity")
+(depends-on "super-save")
 (depends-on "web-mode")
 (depends-on "with-editor")
 (depends-on "wrap-region")
