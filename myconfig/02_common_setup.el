@@ -26,11 +26,11 @@
 (setq save-place-file (expand-file-name ".places" user-emacs-directory))
 
 ;; UTF-8 please
-(setq locale-coding-system 'utf-8) ; pretty
-(set-terminal-coding-system 'utf-8) ; pretty
-(set-keyboard-coding-system 'utf-8) ; pretty
-(set-selection-coding-system 'utf-8) ; please
-(prefer-coding-system 'utf-8) ; with sugar on top
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
 (set-language-environment "UTF-8")
 
 (powerline-default-theme)
@@ -43,3 +43,6 @@
 
 ;; follow symlinks by default
 (setq vc-follow-symlinks 't)
+
+;; Ask for confirmation before closing emacs
+(setq confirm-kill-emacs 'yes-or-no-p)

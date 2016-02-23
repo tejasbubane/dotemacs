@@ -14,3 +14,7 @@
           (when (eq 'dired-mode (buffer-local-value 'major-mode buffer))
             (kill-buffer buffer)))
         (buffer-list)))
+
+;; Always copy/delete recursively
+(setq dired-recursive-copies (quote always))
+(setq dired-recursive-deletes (quote top))
