@@ -18,3 +18,6 @@
 ;; Always copy/delete recursively
 (setq dired-recursive-copies (quote always))
 (setq dired-recursive-deletes (quote top))
+
+;; Reuse dired buffers
+(diredp-toggle-find-file-reuse-dir 1)
