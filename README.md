@@ -21,32 +21,6 @@ cask install
 * `rvm and ruby`
 https://rvm.io/rvm/install
 
-### GoLang
-
-* `GOPATH`
-This config assumes that all go code resides in `~/gocode`
-
-* `godef`: quickly jump around the code
-
-```bash
-go get -v code.google.com/p/rog-go/exp/cmd/godef
-go install -v code.google.com/p/rog-go/exp/cmd/godef
-```
-
-* `gocode`: Go aware Autocomplete
-
-```bash
-go get -u -v github.com/nsf/gocode
-```
-
-* `godoc`: shows the go documentation for a given package
-
-```bash
-go get code.google.com/p/go.tools/cmd/godoc
-```
-
-* Copy all above binaries from `$GOPATH/bin` to `~/bin` (Some weird exec-path issue)
-
 
 # Credits
 
