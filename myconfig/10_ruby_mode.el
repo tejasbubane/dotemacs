@@ -6,11 +6,7 @@
 ;; RVM
 (rvm-use-default)
 
-;; YARI shorthand
-(define-key 'help-command "R" 'yari)
-
 (add-hook 'ruby-mode-hook 'robe-mode)
-(add-hook 'robe-mode-hook 'ac-robe-setup)
 (add-hook 'robe-mode-hook 'flycheck-mode)
 (add-hook 'ruby-mode-hook 'projectile-rails-mode)
 
@@ -19,21 +15,10 @@
 (add-hook 'ruby-mode-hook
 	  (lambda () (highlight-indentation-current-column-mode)))
 
-;; ruby-tools for string-symbol helpers
-(add-hook 'ruby-mode-hook 'ruby-tools-mode)
-
-;; use proper rvm from the directory
-(add-hook 'ruby-mode-hook
-          (lambda () (rvm-activate-corresponding-ruby)))
-
-;; evaluating ruby code inside buffer (like playgound)
-(require 'rcodetools)
-(global-set-key (kbd "C-c C-e") 'xmp)
-
+;; Add binding.pry at cursor position
 (defun insert-pry ()
   (interactive)
   (insert "binding.pry"))
-
 (global-set-key (kbd "C-c d") 'insert-pry)
 
 ;; Align chained method calls
