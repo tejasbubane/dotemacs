@@ -53,6 +53,7 @@
  '(markdown-command "rdiscount")
  '(pos-tip-background-color "#A6E22E")
  '(pos-tip-foreground-color "#272822")
+ '(safe-local-variable-values (quote ((setq sgml-basic-offset 4))))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote

@@ -2,6 +2,7 @@
 (source melpa)
 
 (depends-on "ag")
+(depends-on "angular-mode")
 (depends-on "ansi")
 (depends-on "anzu")
 (depends-on "async")
@@ -60,6 +61,7 @@
 (depends-on "pallet")
 (depends-on "persp-projectile")
 (depends-on "perspective")
+(depends-on "php-mode")
 (depends-on "pkg-info")
 (depends-on "popup")
 (depends-on "popwin")
