@@ -21,7 +21,7 @@
 (add-to-list 'load-path vendor) ;; third party plugins
 
 (mapcar 'load (directory-files myconfig t "\\.el\\'"))
-(mapcar 'load (directory-files vendor t "\\.el\\'"))
+(mapcar 'load (directory-files vendor t "\\.elc\\'"))
 
 ;;; init.el ends here
 (custom-set-variables
