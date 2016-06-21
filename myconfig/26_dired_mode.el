@@ -20,4 +20,5 @@
 (setq dired-recursive-deletes (quote top))
 
 ;; Reuse dired buffers
+(require 'dired+)
 (diredp-toggle-find-file-reuse-dir 1)

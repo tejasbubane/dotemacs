@@ -21,6 +21,7 @@
 (depends-on "elixir-mode")
 (depends-on "epl")
 (depends-on "espuds")
+(depends-on "exec-path-from-shell")
 (depends-on "expand-region")
 (depends-on "f")
 (depends-on "feature-mode")
