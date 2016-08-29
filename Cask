@@ -21,6 +21,7 @@
 (depends-on "dockerfile-mode")
 (depends-on "drag-stuff")
 (depends-on "elixir-mode")
+(depends-on "elm-mode")
 (depends-on "epl")
 (depends-on "espuds")
 (depends-on "exec-path-from-shell")
