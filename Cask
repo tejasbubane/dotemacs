@@ -61,6 +61,7 @@
 (depends-on "multiple-cursors")
 (depends-on "nginx-mode")
 (depends-on "noflet")
+(depends-on "org-bullets")
 (depends-on "package-build")
 (depends-on "pallet")
 (depends-on "paredit")
