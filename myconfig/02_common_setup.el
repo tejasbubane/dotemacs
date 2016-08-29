@@ -35,10 +35,6 @@
 
 (powerline-default-theme)
 
-;; add custom paths to exec-path
-(setq exec-path (append exec-path '("~/bin")))
-(setq exec-path (append exec-path '("/usr/sbin")))
-
 (defalias 'yes-or-no-p 'y-or-n-p) ;; shorthands for yes and no
 
 ;; follow symlinks by default
@@ -46,3 +42,11 @@
 
 ;; Ask for confirmation before closing emacs
 (setq confirm-kill-emacs 'yes-or-no-p)
+
+;; load $PATH from .zshenv
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
+;; add custom paths to exec-path
+(setq exec-path (append exec-path '("~/bin")))
+(setq exec-path (append exec-path '("/usr/sbin")))

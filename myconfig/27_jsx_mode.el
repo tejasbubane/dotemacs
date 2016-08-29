@@ -7,10 +7,8 @@
 (setq web-mode-code-indent-offset 2)
 
 ;; Load JSxHint using shell path
-(require 'exec-path-from-shell)
-(setq exec-path-from-shell-arguments '("-i"))
-(exec-path-from-shell-initialize)
-
+;; exec-path-from-shell is being called in common-setup.el
+;; which loads env variable $PATH from .zshenv
 (require 'flycheck)
 (flycheck-define-checker jsxhint-checker
   "A JSX syntax and style checker based on JSXHint."
