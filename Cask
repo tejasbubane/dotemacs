@@ -13,6 +13,7 @@
 (depends-on "coffee-mode")
 (depends-on "color-theme")
 (depends-on "commander")
+(depends-on "csv-mode")
 (depends-on "dash")
 (depends-on "deferred")
 (depends-on "diminish")
@@ -62,6 +63,7 @@
 (depends-on "nginx-mode")
 (depends-on "noflet")
 (depends-on "org-bullets")
+(depends-on "org-tree-slide")
 (depends-on "package-build")
 (depends-on "pallet")
 (depends-on "paredit")
@@ -92,6 +94,7 @@
 (depends-on "shut-up")
 (depends-on "smex")
 (depends-on "sml-mode")
+(depends-on "solarized-theme")
 (depends-on "string-utils")
 (depends-on "sublimity")
 (depends-on "super-save")
@@ -100,3 +103,4 @@
 (depends-on "wrap-region")
 (depends-on "yaml-mode")
 (depends-on "yari")
+
