@@ -98,9 +98,9 @@
 (depends-on "string-utils")
 (depends-on "sublimity")
 (depends-on "super-save")
+(depends-on "typescript-mode")
 (depends-on "web-mode")
 (depends-on "with-editor")
 (depends-on "wrap-region")
 (depends-on "yaml-mode")
 (depends-on "yari")
-
