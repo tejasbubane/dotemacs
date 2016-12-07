@@ -14,6 +14,22 @@ curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
 cask install
 ```
 
+# Updates
+
+To upgrade cask to newer version:
+
+```bash
+cask upgrade-cask
+```
+
+To update all packages
+
+```bash
+cask update
+```
+
+More instruction on using cask: https://cask.readthedocs.io/en/latest/guide/usage.html
+
 # Language Specifics
 
 ### Ruby
