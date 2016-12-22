@@ -42,7 +42,7 @@
  '(cua-read-only-cursor-color "#859900")
  '(custom-safe-themes
    (quote
-    ("557c283f4f9d461f897b8cac5329f1f39fac785aa684b78949ff329c33f947ec" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "38ba6a938d67a452aeb1dada9d7cdeca4d9f18114e9fc8ed2b972573138d4664" default)))
+    ("c7a9a68bd07e38620a5508fef62ec079d274475c8f92d75ed0c33c45fbe306bc" "557c283f4f9d461f897b8cac5329f1f39fac785aa684b78949ff329c33f947ec" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "38ba6a938d67a452aeb1dada9d7cdeca4d9f18114e9fc8ed2b972573138d4664" default)))
  '(fci-rule-color "#3E3D31")
  '(highlight-changes-colors (quote ("#FD5FF0" "#AE81FF")))
  '(highlight-symbol-colors
@@ -76,7 +76,7 @@
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (typescript-mode yari yaml-mode wrap-region web-mode super-save sublimity string-utils solarized-theme sml-mode smex rvm ruby-tools ruby-hash-syntax ruby-end ruby-block rspec-mode robe rinari rhtml-mode restclient request rainbow-mode projectile-rails powerline popwin php-mode persp-projectile paredit pallet org-tree-slide org-bullets noflet nginx-mode multiple-cursors multi-term monokai-theme minitest markdown-mode+ magit json-mode jasminejs-mode ido-vertical-mode highlight-indentation haskell-mode haml-mode grizzl golden-ratio flyspell-lazy flymake-json flymake-jslint flymake-haml flycheck flx-ido fill-column-indicator feature-mode expand-region exec-path-from-shell espuds elm-mode elixir-mode drag-stuff dockerfile-mode dired-details dired+ diminish deferred csv-mode commander color-theme coffee-mode cider auto-complete anzu ansi angular-mode ag)))
+    (js2-mode yasnippet typescript-mode yari yaml-mode wrap-region web-mode super-save sublimity string-utils solarized-theme sml-mode smex rvm ruby-tools ruby-hash-syntax ruby-end ruby-block rspec-mode robe rinari rhtml-mode restclient request rainbow-mode projectile-rails powerline popwin php-mode persp-projectile paredit pallet org-tree-slide org-bullets noflet nginx-mode multiple-cursors multi-term monokai-theme minitest markdown-mode+ magit json-mode jasminejs-mode ido-vertical-mode highlight-indentation haskell-mode haml-mode grizzl golden-ratio flyspell-lazy flymake-json flymake-jslint flymake-haml flycheck flx-ido fill-column-indicator feature-mode expand-region exec-path-from-shell espuds elm-mode elixir-mode drag-stuff dockerfile-mode dired-details dired+ diminish deferred csv-mode commander color-theme coffee-mode cider auto-complete anzu ansi angular-mode ag)))
  '(pos-tip-background-color "#A6E22E")
  '(pos-tip-foreground-color "#272822")
  '(safe-local-variable-values (quote ((setq sgml-basic-offset 4))))
@@ -110,7 +110,8 @@
  '(xterm-color-names
    ["#073642" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"])
  '(xterm-color-names-bright
-   ["#002b36" "#cb4b16" "#586e75" "#657b83" "#839496" "#6c71c4" "#93a1a1" "#fdf6e3"]))
+   ["#002b36" "#cb4b16" "#586e75" "#657b83" "#839496" "#6c71c4" "#93a1a1" "#fdf6e3"])
+ '(yas-global-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

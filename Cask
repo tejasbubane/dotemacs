@@ -105,3 +105,4 @@
 (depends-on "wrap-region")
 (depends-on "yaml-mode")
 (depends-on "yari")
+(depends-on "yasnippet")
