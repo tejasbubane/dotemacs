@@ -1,0 +1,4 @@
+# console.log
+# creator: Tejas Bubane <tejasbubane@gmail.com>
+# --
+console.log(${1:arg});

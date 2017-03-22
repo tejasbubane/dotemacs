@@ -1,0 +1,6 @@
+# anonymous function (multi-line block)
+# creator: Tejas Bubane <tejasbubane@gmail.com>
+# --
+(${1:param}) => {
+  return ${2:result};
+}

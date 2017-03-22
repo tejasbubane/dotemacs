@@ -1,0 +1,8 @@
+# es2015 class
+# creator: Tejas Bubane <tejasbubane@gmail.com>
+# --
+class ${1:ClassName} {
+       constructor(${2:param}) {
+                                      $0
+                               }
+}

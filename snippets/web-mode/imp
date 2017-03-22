@@ -1,0 +1,4 @@
+# import module
+# creator: Tejas Bubane <tejasbubane@gmail.com>
+# --
+import {${1:moduleName}} from '${2:fileName}';
