@@ -31,10 +31,11 @@
 
 ;; disable jshint since we prefer eslint checking
 (setq-default flycheck-disabled-checkers
-  (append flycheck-disabled-checkers
-    '(javascript-jshint jsxhint-checker json-jsonlint)))
+  (setq-default flycheck-disabled-checkers
+                '(javascript-jshint jsxhint-checker json-jsonlint)))
 
-(flycheck-add-mode 'javascript-eslint 'web-mode)
+(eval-after-load 'flycheck
+  '(flycheck-add-mode 'javascript-eslint 'web-mode))
 
 ;; use local eslint from node_modules before global
 ;; http://emacs.stackexchange.com/questions/21205/flycheck-with-file-relative-eslint-executable
