@@ -52,7 +52,6 @@
 (depends-on "inf-ruby")
 (depends-on "inflections")
 (depends-on "jasminejs-mode")
-(depends-on "js2-mode")
 (depends-on "json-mode")
 (depends-on "json-reformat")
 (depends-on "jump")
