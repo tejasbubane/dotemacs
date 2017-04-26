@@ -34,6 +34,7 @@
 (depends-on "feature-mode")
 (depends-on "fill-column-indicator")
 (depends-on "findr")
+(depends-on "fish-mode")
 (depends-on "flx")
 (depends-on "flx-ido")
 (depends-on "flycheck")
