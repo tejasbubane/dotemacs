@@ -46,6 +46,7 @@
 (depends-on "golden-ratio")
 (depends-on "grizzl")
 (depends-on "haml-mode")
+(depends-on "handlebars-mode")
 (depends-on "haskell-mode")
 (depends-on "highlight-indentation")
 (depends-on "highlight2clipboard")
