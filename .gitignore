@@ -19,3 +19,6 @@ smex-items
 .places
 
 .DS_Store
+
+network-security.data
+elpa/gnupg/
