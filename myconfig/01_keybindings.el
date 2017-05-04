@@ -7,6 +7,7 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
+;; Magit
 (global-set-key (kbd "C-c m") 'magit-status)
 
 (global-set-key (kbd "C-c h") 'ruby-toggle-hash-syntax)

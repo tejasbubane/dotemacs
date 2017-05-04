@@ -30,3 +30,16 @@
 
 (global-set-key (kbd "M-<up>") 'move-line-up)
 (global-set-key (kbd "M-<down>") 'move-line-down)
+
+;; [3]
+;; Duplicate line below
+;; http://stackoverflow.com/a/551053/3507206
+(defun duplicate-line()
+  (interactive)
+  (move-beginning-of-line 1)
+  (kill-line)
+  (yank)
+  (newline)
+  (yank)
+)
+(global-set-key (kbd "C-c r") 'duplicate-line)
