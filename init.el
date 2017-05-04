@@ -76,7 +76,7 @@
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (ac-js2 js2-mode fish-mode handlebars-mode erlang highlight2clipboard editorconfig ace-jump-mode yasnippet typescript-mode yari yaml-mode wrap-region web-mode super-save string-utils solarized-theme sml-mode smex rvm ruby-tools ruby-hash-syntax ruby-end ruby-block rspec-mode robe rinari rhtml-mode restclient request rainbow-mode projectile-rails powerline popwin persp-projectile paredit pallet org-tree-slide org-bullets noflet nginx-mode multiple-cursors multi-term monokai-theme minitest markdown-mode+ magit json-mode jasminejs-mode ido-vertical-mode highlight-indentation haml-mode grizzl golden-ratio flyspell-lazy flymake-json flymake-jslint flymake-haml flycheck flx-ido fill-column-indicator feature-mode expand-region exec-path-from-shell espuds elm-mode elixir-mode dockerfile-mode dired-details dired+ diminish deferred csv-mode commander color-theme cider auto-complete anzu ansi ag)))
+    (rjsx-mode ac-js2 js2-mode fish-mode handlebars-mode erlang highlight2clipboard editorconfig ace-jump-mode yasnippet typescript-mode yari yaml-mode wrap-region web-mode super-save string-utils solarized-theme sml-mode smex rvm ruby-tools ruby-hash-syntax ruby-end ruby-block rspec-mode robe rinari rhtml-mode restclient request rainbow-mode projectile-rails powerline popwin persp-projectile paredit pallet org-tree-slide org-bullets noflet nginx-mode multiple-cursors multi-term monokai-theme minitest markdown-mode+ magit json-mode jasminejs-mode ido-vertical-mode highlight-indentation haml-mode grizzl golden-ratio flyspell-lazy flymake-json flymake-jslint flymake-haml flycheck flx-ido fill-column-indicator feature-mode expand-region exec-path-from-shell espuds elm-mode elixir-mode dockerfile-mode dired-details dired+ diminish deferred csv-mode commander color-theme cider auto-complete anzu ansi ag)))
  '(pos-tip-background-color "#A6E22E")
  '(pos-tip-foreground-color "#272822")
  '(safe-local-variable-values (quote ((setq sgml-basic-offset 4))))
@@ -112,9 +112,3 @@
  '(xterm-color-names-bright
    ["#002b36" "#cb4b16" "#586e75" "#657b83" "#839496" "#6c71c4" "#93a1a1" "#fdf6e3"])
  '(yas-global-mode t))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

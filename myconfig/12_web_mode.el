@@ -5,8 +5,6 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 
 (defun my-web-mode-hook ()
   "Hooks for Web mode."
@@ -25,17 +23,6 @@
 )
 (add-hook 'web-mode-hook 'my-web-mode-hook)
 
-;; Use web-mode for syntax highlighting JSX
-(setq web-mode-content-types-alist
-  '(("jsx" . "\\.js[x]?\\'")))
-
-;; disable jshint since we prefer eslint checking
-(setq-default flycheck-disabled-checkers
-  (setq-default flycheck-disabled-checkers
-                '(javascript-jshint jsxhint-checker json-jsonlint)))
-
-(eval-after-load 'flycheck
-  '(flycheck-add-mode 'javascript-eslint 'web-mode))
 
 ;; use local eslint from node_modules before global
 ;; http://emacs.stackexchange.com/questions/21205/flycheck-with-file-relative-eslint-executable

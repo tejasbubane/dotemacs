@@ -85,6 +85,7 @@
 (depends-on "restclient")
 (depends-on "rhtml-mode")
 (depends-on "rinari")
+(depends-on "rjsx-mode")
 (depends-on "robe")
 (depends-on "rspec-mode")
 (depends-on "ruby-block")
