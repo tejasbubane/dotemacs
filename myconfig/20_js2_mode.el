@@ -4,7 +4,7 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 ;; Fix offset
-(setq js2-basic-offset 2)
+(add-hook 'js2-mode-hook (lambda () (setq js2-basic-offset 2)))
 
 ;; disable jshint since we prefer eslint checking
 (setq-default flycheck-disabled-checkers
