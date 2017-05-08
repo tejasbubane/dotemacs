@@ -16,6 +16,10 @@
 
 (add-hook 'js2-mode-hook (lambda () (electric-pair-mode 1)))
 
+(setq-default
+ js2-ignored-warnings
+ '("msg.no.side.effects"))
+
 ;; Tern.JS
 ;; (add-to-list 'load-path "~/tern/emacs/")
 ;; (autoload 'tern-mode "tern.el" nil t)
