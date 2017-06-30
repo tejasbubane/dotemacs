@@ -29,3 +29,6 @@
 
 ;; Need line numbers in Rspec files
 (add-hook 'rspec-mode-hook 'linum-mode)
+
+;; Disable reek checker
+(add-to-list 'flycheck-disabled-checkers 'ruby-reek)
