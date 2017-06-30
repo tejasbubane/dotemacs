@@ -20,7 +20,7 @@
 
 (setq-default
  js2-ignored-warnings
- '("msg.no.side.effects"))
+ '("msg.no.side.effects" "msg.missing.semi"))
 
 ;; Tern.JS
 ;; (add-to-list 'load-path "~/tern/emacs/")
