@@ -15,6 +15,8 @@
   '(flycheck-add-mode 'javascript-eslint 'js2-mode))
 
 (add-hook 'js2-mode-hook (lambda () (electric-pair-mode 1)))
+(add-hook 'js2-mode-hook (lambda () (company-mode 1)))
+(add-hook 'js2-mode-hook (lambda () (flycheck-mode 1)))
 
 (setq-default
  js2-ignored-warnings
