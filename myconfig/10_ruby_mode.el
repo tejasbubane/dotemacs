@@ -31,4 +31,5 @@
 (add-hook 'rspec-mode-hook 'linum-mode)
 
 ;; Disable reek checker
-(add-to-list 'flycheck-disabled-checkers 'ruby-reek)
+(add-hook 'ruby-mode-hook
+	  (lambda () (add-to-list 'flycheck-disabled-checkers 'ruby-reek)))
