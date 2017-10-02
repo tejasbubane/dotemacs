@@ -3,6 +3,7 @@
 (setq user-full-name "Tejas Bubane"
       user-mail-address "tejasbubane@gmail.com")
 
+;; Emacs Server
 (require 'server)
 (unless (server-running-p) (server-start))
 
@@ -58,5 +59,8 @@
 
 ;; Load the user settings from `custom.el`.
 (load custom-file 'noerror)
+
+;; Use pretty symbols - eg lambda character
+(global-prettify-symbols-mode 1)
 
 (provide 'common-setup)

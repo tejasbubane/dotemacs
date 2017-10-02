@@ -21,3 +21,8 @@
 (require 'theme-config)
 (require 'web-config)
 (require 'whitespace-config)
+(require 'js2-config)
+(require 'rjsx-config)
+(require 'perspective-config)
+(require 'sml-config)
+(require 'json-config)
