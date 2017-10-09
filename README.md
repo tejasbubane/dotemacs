@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/emacs-config-brightgreen.svg)]()
+[![](https://img.shields.io/badge/emacs-config-brightgreen.svg)](https://github.com/tejasbubane/dotemacs)
 
 # Usage
 
@@ -8,6 +8,8 @@ Hence starting emacs for the first time will take some time, but the later ones 
 
 It also uses [quelpa](https://github.com/quelpa/quelpa) for packages that are not available on melpa,
 to get them from github.
+
+Used and tested on the latest version of emacs.
 
 # Update packages
 
@@ -22,20 +24,17 @@ So upgrading is just telling package.el to upgrade all packages.
 
 # Dependencies
 
-1. **Font**
+1. **Font** : The font I use is [Fira Code](https://github.com/tonsky/FiraCode).
+   Make sure it is installed on your system.
+   Otherwise emacs will throw an error on startup.
+   If you prefer to use some other font, change it [here](/config/theme-font-config.el).
+   Ligatures are configured [here](/config/fira-code-setup.el) - comment the entire thing out
+   if you plan not to use Fira-code.
 
-The font I use is [Fira Code](https://github.com/tonsky/FiraCode). Make sure it is installed on your system.
-Otherwise emacs will throw an error on startup.
-If you prefer to use some other font, change it [here](/config/theme-font-config.el).
-Ligatures are configured [here](/config/fira-code-setup.el) - comment the entire thing out
-if you plan not to use Fira-code.
 
-
-2. **Silver searcher (ag)**
-
-`ag` is used for code searching. Installation instructions are
-[here](https://github.com/ggreer/the_silver_searcher#installing).
-Invoke it using `M-x ag` more info - [ag.el](https://github.com/Wilfred/ag.el).
+2. **Silver searcher (ag)**: `ag` is used for code searching. Installation instructions are
+   [here](https://github.com/ggreer/the_silver_searcher#installing).
+   Invoke it using `M-x ag` more info - [ag.el](https://github.com/Wilfred/ag.el).
 
 # Credits
 
