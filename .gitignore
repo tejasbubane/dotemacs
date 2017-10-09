@@ -1,16 +1,20 @@
-projectile*
-.cask
+elpa
+quelpa
+
 *~
-auto-save-list
+
+projectile-bookmarks.eld
+projectile.cache
+
 ac-comphist.dat
+network-security.data
+
+auto-save-list
 .mc*
 bookmarks
 eshell
-session*
 autosaves/*
 *.elc
-
-jabber-history/
 
 ido.last
 recentf
@@ -19,11 +23,6 @@ smex-items
 .places
 
 .DS_Store
-
-network-security.data
-
-elpa
-quelpa
 
 loaddefs.el
 custom.el
