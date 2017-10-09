@@ -21,4 +21,9 @@ smex-items
 .DS_Store
 
 network-security.data
-elpa/gnupg/
+
+elpa
+quelpa
+
+loaddefs.el
+custom.el
