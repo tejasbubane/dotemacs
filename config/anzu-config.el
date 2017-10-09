@@ -4,6 +4,6 @@
    ("C-M-%" . anzu-query-replace-regexp))
 
   :config
-  (global-anzu-mode +1))
+  (global-anzu-mode))
 
 (provide 'anzu-config)

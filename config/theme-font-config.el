@@ -4,4 +4,4 @@
   (when (window-system)
     (set-default-font "Fira Code Light 13")))
 
-(provide 'theme-config)
+(provide 'theme-font-config)
