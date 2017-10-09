@@ -1,58 +1,39 @@
 # Usage
 
-* This config uses the [Cask](https://github.com/cask/cask) project management tool for Emacs. First install it:
+This config uses the awesome [use-package](https://github.com/jwiegley/use-package).
+It will take care of fetching and installing all the packages on first load and byte-compiling them.
+Hence starting emacs for the first time will take some time, but the later ones should be blazing fast.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
-```
+It also uses [quelpa](https://github.com/quelpa/quelpa) for packages that are not available on melpa,
+to get them from github.
 
-* Clone this repository in your home folder and rename it .emacs.d
+# Update packages
 
-* cd into ~/.emacs.d and run
+`use-package` uses emacs' inbuilt [package.el](http://wikemacs.org/wiki/Package.el).
+So upgrading is just telling package.el to upgrade all packages.
 
-```bash
-cask install
-```
+* Open the list of package - `M-x package-list-packages`
 
-# Updates
+* Mark packages for upgrading - `U`
 
-To upgrade cask to newer version:
-
-```bash
-cask upgrade-cask
-```
-
-To update all packages
-
-```bash
-cask update
-```
-
-More instruction on using cask: https://cask.readthedocs.io/en/latest/guide/usage.html
-
-# Language Specifics
-
-### Ruby
-
-* `rvm and ruby`
-https://rvm.io/rvm/install
+* Install updates - `x` - confirm - `y (yes)`
 
 
 # Credits
 
-My config is inspired from these resources :
+My config has bits and pieces taken from these resources:
 
-* Cask and Pallet:
-http://www.swaroopch.com/2013/10/17/emacs-configuration-tutorial/
+* The brilliant README `use-package` has got:
+https://github.com/jwiegley/use-package/blob/master/README.md
+
+* Mastering emacs' post on use-package:
+https://www.masteringemacs.org/article/spotlight-use-package-a-declarative-configuration-tool
 
 * Ruby and Rails:
 http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/
 
 * General config (Theme, font, window-config, etc):
 https://github.com/larstvei/dot-emacs
-
-* GoLang:
-http://tleyden.github.io/blog/2014/05/22/configure-emacs-as-a-go-editor-from-scratch/
 
 * Prathamesh's dotemacs:
 https://github.com/prathamesh-sonpatki/dotemacs
