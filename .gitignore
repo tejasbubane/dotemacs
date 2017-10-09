@@ -2,7 +2,7 @@ projectile*
 .cask
 *~
 auto-save-list
-ac-*
+ac-comphist.dat
 .mc*
 bookmarks
 eshell

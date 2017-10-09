@@ -1,3 +1,5 @@
+[![](https://img.shields.io/badge/emacs-config-brightgreen.svg)]()
+
 # Usage
 
 This config uses the awesome [use-package](https://github.com/jwiegley/use-package).
@@ -44,6 +46,3 @@ And some others I can't recollect.
 Blog: [http://foss-geek.blogspot.in/](http://foss-geek.blogspot.in/)
 
 Twitter: [@tejasbubane](https://twitter.com/tejasbubane)
-
-[![](http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png)](https://in.linkedin.com/in/tejasbubane)
-[![](http://api.coderwall.com/purcell/endorsecount.png)](http://coderwall.com/tejasbubane)
