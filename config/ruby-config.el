@@ -5,7 +5,6 @@
   ;; These package are used only with ruby-mode, load them along with ruby-mode
   :init
   (use-package ruby-hash-syntax
-    :ensure t
     :bind (("C-c h" . ruby-toggle-hash-syntax)))
   (use-package projectile-rails)
 

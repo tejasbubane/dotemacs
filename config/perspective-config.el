@@ -1,6 +1,8 @@
 (use-package perspective
+  :init
+  (use-package persp-projectile)
+
   :config
   (persp-mode))
-(use-package persp-projectile)
 
 (provide 'perspective-config)

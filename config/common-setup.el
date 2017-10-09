@@ -63,4 +63,9 @@
 ;; Use pretty symbols - eg lambda character
 (global-prettify-symbols-mode 1)
 
+;; Diminish mode - just install here
+;; And use with `use-package` directly:
+;; https://github.com/jwiegley/use-package#diminishing-and-delighting-minor-modes
+(use-package diminish)
+
 (provide 'common-setup)

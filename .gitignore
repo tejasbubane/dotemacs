@@ -23,6 +23,7 @@ smex-items
 network-security.data
 
 elpa
+quelpa
 
 loaddefs.el
 custom.el
