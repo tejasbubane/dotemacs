@@ -25,6 +25,7 @@
 (require 'perspective-config)
 (require 'powerline-config)
 (require 'projectile-config)
+(require 'reason-config)
 (require 'recentf-config)
 (require 'restclient-config)
 (require 'rjsx-config)

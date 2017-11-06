@@ -45,7 +45,6 @@
 
 ;; load $PATH from .zshenv
 (use-package exec-path-from-shell
-  :defer t
   :config (exec-path-from-shell-initialize))
 
 ;; add custom paths to exec-path
