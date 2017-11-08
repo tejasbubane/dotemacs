@@ -67,6 +67,9 @@
 ;; https://github.com/jwiegley/use-package#diminishing-and-delighting-minor-modes
 (use-package diminish)
 
+;; Install flycheck here since this file is loaded before other mode-configs
+(use-package flycheck)
+
 ;; Use subword mode - treats parts of camelCase words separate (camel, Case)
 ;; Useful for kill-word
 (global-subword-mode +1)
