@@ -8,7 +8,8 @@
 
 (let* ((refmt-bin (or (shell-cmd "refmt ----where")
                       (shell-cmd "which refmt")))
-       (merlin-bin (shell-cmd "which ocamlmerlin"))
+       (merlin-bin (or (shell-cmd "ocamlmerlin ----where")
+                       (shell-cmd "which ocamlmerlin")))
        (merlin-base-dir (when merlin-bin
                           (replace-regexp-in-string "bin/ocamlmerlin$" "" merlin-bin))))
   ;; Add npm merlin.el to the emacs load path and tell emacs where to find ocamlmerlin
