@@ -14,7 +14,7 @@
 (require 'quelpa-setup)
 (require 'window-setup)
 (require 'common-setup)
-(require 'fira-code-setup)
+;;(require 'fira-code-setup)
 
 ;; Configs
 (require 'ac-config)
