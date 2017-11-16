@@ -45,6 +45,7 @@
 (require 'uniquify-config)
 (require 'web-config)
 (require 'whitespace-config)
+(require 'yaml-config)
 (require 'yasnippet-config)
 
 ;; Utils
