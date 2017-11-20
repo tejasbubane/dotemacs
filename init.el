@@ -39,6 +39,7 @@
 (require 'rspec-config)
 (require 'ruby-config)
 (require 'sh-config)
+(require 'smartparens-config)
 (require 'sml-config)
 (require 'super-save-config)
 (require 'theme-font-config)
