@@ -22,6 +22,7 @@
 (require 'ag-config)
 (require 'anzu-config)
 (require 'dired-config)
+(require 'ibuffer-config)
 (require 'ido-config)
 (require 'js2-config)
 (require 'json-config)
