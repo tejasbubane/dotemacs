@@ -1,5 +1,5 @@
 ;; Reason mode is not on Melpa, fetch it directly from github using quelpa
-(quelpa '(reason-mode :repo "reasonml-editor/reason-mode" :fetcher github))
+(add-to-list 'load-path (concat user-emacs-directory (convert-standard-filename "vendor/reason-mode")))
 
 (defun shell-cmd (cmd)
   "Returns the stdout output of a shell command or nil if the command returned

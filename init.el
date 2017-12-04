@@ -11,7 +11,6 @@
 
 ;; Setups
 (require 'package-setup)
-(require 'quelpa-setup)
 (require 'window-setup)
 (require 'common-setup)
 ;;(require 'fira-code-setup)
