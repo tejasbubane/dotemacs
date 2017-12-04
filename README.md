@@ -1,5 +1,6 @@
 [![](https://img.shields.io/badge/emacs-config-brightgreen.svg)](https://github.com/tejasbubane/dotemacs)
 
+
 # Usage
 
 This config uses the awesome [use-package](https://github.com/jwiegley/use-package).
@@ -11,6 +12,7 @@ to get them from github.
 
 Used and tested on the latest version of emacs.
 
+
 # Update packages
 
 `use-package` uses emacs' inbuilt [package.el](http://wikemacs.org/wiki/Package.el).
@@ -21,6 +23,7 @@ So upgrading is just telling package.el to upgrade all packages.
 * Mark packages for upgrading - `U`
 
 * Install updates - `x` - confirm - `y (yes)`
+
 
 # Dependencies
 
@@ -35,6 +38,27 @@ So upgrading is just telling package.el to upgrade all packages.
 2. **Silver searcher (ag)**: `ag` is used for code searching. Installation instructions are
    [here](https://github.com/ggreer/the_silver_searcher#installing).
    Invoke it using `M-x ag` more info - [ag.el](https://github.com/Wilfred/ag.el).
+
+
+# Submodules
+
+There are two submodules:
+
+* [use-package](https://github.com/jwiegley/use-package): The package manager. Instead of using from MELPA, I am using the direct github version.
+
+* [reason-mode](https://github.com/reasonml-editor/reason-mode): Major mode for ReasonML programming language. This package is not available on MELPA.
+
+
+# Updates
+
+All packages installed via `use-package` can be normally updated using `package-install` (via melpa).
+
+Git submodules (use-package itself and reason-mode) can be updated by running
+
+```sh
+git submodule update --remote
+```
+
 
 # Credits
 
