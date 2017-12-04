@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# key: rr
+# name: React Render
+# creator: Tejas Bubane <tejasbubane@gmail.com>
+# --
+render() {
+  return(
+    $1
+  )
+}

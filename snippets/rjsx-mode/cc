@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: cc
+# name: Component Class
+# creator: Tejas Bubane <tejasbubane@gmail.com>
+# --
+class $1 extends Component {
+  $2
+}

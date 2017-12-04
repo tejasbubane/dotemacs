@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: fc
+# name: Function Component
+# creator: Tejas Bubane <tejasbubane@gmail.com>
+# --
+const $1 = ($2) => {
+  $3
+}
