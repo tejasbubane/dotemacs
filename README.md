@@ -7,22 +7,24 @@ This config uses the awesome [use-package](https://github.com/jwiegley/use-packa
 It will take care of fetching and installing all the packages on first load and byte-compiling them.
 Hence starting emacs for the first time will take some time, but the later ones should be blazing fast.
 
-It also uses [quelpa](https://github.com/quelpa/quelpa) for packages that are not available on melpa,
-to get them from github.
-
 Used and tested on the latest version of emacs.
 
+Clone this repo in `~/.emacs.d` and make sure you install the submodules:
 
-# Update packages
+```sh
+git clone --recursive git@github.com:tejasbubane/dotemacs.git .emacs.d
+```
 
-`use-package` uses emacs' inbuilt [package.el](http://wikemacs.org/wiki/Package.el).
-So upgrading is just telling package.el to upgrade all packages.
+Now just open emacs and use-package will install all packages and byte-compile them.
 
-* Open the list of package - `M-x package-list-packages`
 
-* Mark packages for upgrading - `U`
+# Submodules
 
-* Install updates - `x` - confirm - `y (yes)`
+There are two submodules:
+
+* [use-package](https://github.com/jwiegley/use-package): The package manager. Instead of using from MELPA, I am using the direct github version.
+
+* [reason-mode](https://github.com/reasonml-editor/reason-mode): Major mode for ReasonML programming language. This package is not available on MELPA.
 
 
 # Dependencies
@@ -40,18 +42,16 @@ So upgrading is just telling package.el to upgrade all packages.
    Invoke it using `M-x ag` more info - [ag.el](https://github.com/Wilfred/ag.el).
 
 
-# Submodules
+# Update packages
 
-There are two submodules:
+`use-package` uses emacs' inbuilt [package.el](http://wikemacs.org/wiki/Package.el).
+So upgrading is just telling package.el to upgrade all packages.
 
-* [use-package](https://github.com/jwiegley/use-package): The package manager. Instead of using from MELPA, I am using the direct github version.
+* Open the list of package - `M-x package-list-packages`
 
-* [reason-mode](https://github.com/reasonml-editor/reason-mode): Major mode for ReasonML programming language. This package is not available on MELPA.
+* Mark packages for upgrading - `U`
 
-
-# Updates
-
-All packages installed via `use-package` can be normally updated using `package-install` (via melpa).
+* Install updates - `x` - confirm - `y (yes)`
 
 Git submodules (use-package itself and reason-mode) can be updated by running
 

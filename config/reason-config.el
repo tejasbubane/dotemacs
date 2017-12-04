@@ -1,4 +1,4 @@
-;; Reason mode is not on Melpa, fetch it directly from github using quelpa
+;; Reason mode is not on Melpa, using it as a git submodule
 (add-to-list 'load-path (concat user-emacs-directory (convert-standard-filename "vendor/reason-mode")))
 
 (defun shell-cmd (cmd)
