@@ -1,9 +1,8 @@
 (require 'package)
 (setq package-enable-at-startup nil)
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/"))
-(add-to-list 'package-archives
-             '("marmalade" . "https://marmalade-repo.org/packages/"))
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                         ("org" . "http://orgmode.org/elpa/")
+                         ("gnu" . "https://elpa.gnu.org/packages/")))
 
 ;; Make gnutls recognize the letsencrypt certificate from melpa
 ;; https://emacs.stackexchange.com/a/18070
