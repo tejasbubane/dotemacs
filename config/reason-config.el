@@ -22,9 +22,13 @@
 
 (require 'reason-mode)
 (require 'merlin)
-(add-hook 'reason-mode-hook (lambda ()
-                              (add-hook 'before-save-hook 'refmt-before-save)
-                              (merlin-mode)))
+(defun my-reason-mode-hook()
+  (add-hook 'before-save-hook 'refmt-before-save)
+  (merlin-mode)
+  ;; Issue with emacs hanging
+  ;; https://github.com/haskell/haskell-mode/issues/377
+  (lambda () (electric-indent-local-mode -1)))
+(add-hook 'reason-mode-hook 'my-reason-mode-hook)
 
 (setq merlin-ac-setup t)
 
