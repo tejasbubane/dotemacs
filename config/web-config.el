@@ -18,4 +18,6 @@
             ("html" . (ac-source-words-in-buffer ac-source-abbrev)))))
   (add-hook 'web-mode-hook 'my-web-mode-hook))
 
+(use-package haml-mode)
+
 (provide 'web-config)
