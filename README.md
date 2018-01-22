@@ -37,9 +37,9 @@ There are two submodules:
    if you plan not to use Fira-code.
 
 
-2. **Silver searcher (ag)**: `ag` is used for code searching. Installation instructions are
-   [here](https://github.com/ggreer/the_silver_searcher#installing).
-   Invoke it using `M-x ag` more info - [ag.el](https://github.com/Wilfred/ag.el).
+2. **rgrep**: `rg` is used for code searching. More about `rgrep` and installation instructions are
+   [here](https://github.com/BurntSushi/ripgrep).
+   Invoke it using `M-x rg` more info - [rg.el](https://github.com/Wilfred/ag.el).
 
 
 # Update packages

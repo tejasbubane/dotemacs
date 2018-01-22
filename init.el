@@ -18,7 +18,6 @@
 ;; Configs
 (require 'ac-config)
 (require 'ace-jump-config)
-(require 'ag-config)
 (require 'anzu-config)
 (require 'dired-config)
 (require 'ibuffer-config)
@@ -35,6 +34,7 @@
 (require 'reason-config)
 (require 'recentf-config)
 (require 'restclient-config)
+(require 'rg-config)
 (require 'rjsx-config)
 (require 'rspec-config)
 (require 'ruby-config)
