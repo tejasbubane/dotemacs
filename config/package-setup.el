@@ -13,11 +13,8 @@
 (setq package--init-file-ensured t)
 (package-initialize)
 
-;; Bootstrap `use-package`
-(eval-when-compile
-  ;; Following line is not needed if use-package.el is in ~/.emacs.d
-  (add-to-list 'load-path (concat user-emacs-directory (convert-standard-filename "vendor/use-package")))
-  (require 'use-package))
+(package-install 'use-package)
+(add-to-list 'package-selected-packages 'use-package)
 
 ;; Install packages if not available
 (setq use-package-always-ensure t)
