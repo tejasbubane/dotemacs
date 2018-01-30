@@ -42,6 +42,7 @@
 (require 'sh-config)
 (require 'smartparens-config)
 (require 'sml-config)
+(require 'sql-config)
 (require 'super-save-config)
 (require 'theme-font-config)
 (require 'uniquify-config)
