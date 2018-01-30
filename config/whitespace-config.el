@@ -12,4 +12,8 @@
 (setq whitespace-global-modes '(not org-mode web-mode "Web" emacs-lisp-mode))
 (global-whitespace-mode)
 
+;; don't show in modeline - less clutter
+(diminish 'whitespace-mode)
+(diminish 'global-whitespace-mode)
+
 (provide 'whitespace-config)

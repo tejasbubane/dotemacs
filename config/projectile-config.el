@@ -5,6 +5,8 @@
     (add-hook 'projectile-mode-hook 'projectile-rails-on)
     (setq projectile-rails-add-keywords nil))
 
+  :diminish projectile-mode
+
   :config
   (projectile-global-mode)
   (setq projectile-enable-caching t)

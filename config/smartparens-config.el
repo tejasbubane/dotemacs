@@ -1,4 +1,5 @@
 (use-package smartparens
+  :diminish smartparens-mode
   :config
   ;; Try with these and maybe enable globally later
   (add-hook 'js-mode-hook #'smartparens-mode)

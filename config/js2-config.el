@@ -2,7 +2,8 @@
   :mode ("\\.js\\'")
 
   :init
-  (use-package prettier-js)
+  (use-package prettier-js
+    :diminish "prettier")
   (use-package add-node-modules-path)
 
   :config

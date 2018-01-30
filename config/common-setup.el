@@ -7,14 +7,19 @@
 (require 'server)
 (unless (server-running-p) (server-start))
 
-(add-hook 'before-save-hook 'delete-trailing-whitespace) ;; delete trailing whitespaces
-(setq require-final-newline t) ;; There should be a newline at the end of every file I save
+;; Delete trailing whitespaces
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-(setq-default indent-tabs-mode nil) ;; never use tabs for indentation
+;; There should be a newline at the end of every file I save
+(setq require-final-newline t)
+
+;; never use tabs for indentation
+(setq-default indent-tabs-mode nil)
 
 ;; To avoid file system clutter we put all auto saved files in a single directory.
 (defvar emacs-autosave-directory
   (concat user-emacs-directory "autosaves/"))
+
 ;; Sets all files to be backed up and auto saved in a single directory.
 (setq backup-directory-alist
       `((".*" . ,emacs-autosave-directory))
@@ -68,10 +73,14 @@
 (use-package diminish)
 
 ;; Install flycheck here since this file is loaded before other mode-configs
-(use-package flycheck)
+(use-package flycheck
+  :diminish flycheck-mode)
 
 ;; Use subword mode - treats parts of camelCase words separate (camel, Case)
 ;; Useful for kill-word
 (global-subword-mode +1)
+(diminish 'subword-mode)
+
+(diminish 'isearch-mode)
 
 (provide 'common-setup)
