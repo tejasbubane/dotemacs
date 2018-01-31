@@ -14,7 +14,6 @@
     (setq-default flycheck-disabled-checkers
                   '(javascript-jshint jsxhint-checker json-jsonlint))
     (add-node-modules-path)
-    (flycheck-mode 1)
     (prettier-js-mode)
     (setq-default
      js2-ignored-warnings

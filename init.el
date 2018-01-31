@@ -15,6 +15,9 @@
 (require 'common-setup)
 ;;(require 'fira-code-setup)
 
+;; Install flycheck here since this file is loaded before other mode-configs
+(require 'flycheck-config)
+
 ;; Configs
 (require 'ac-config)
 (require 'ace-jump-config)
