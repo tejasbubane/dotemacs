@@ -5,7 +5,7 @@
   ;; These package are used only with ruby-mode, load them along with ruby-mode
   :init
   (use-package ruby-hash-syntax
-    :bind (("C-c h" . ruby-toggle-hash-syntax)))
+    :bind (("C-c h" . ruby-hash-syntax-toggle)))
   (use-package projectile-rails)
 
   ;; Evaluate this after ruby-mode is loaded
@@ -17,8 +17,7 @@
     (insert "binding.pry"))
   (defun my-ruby-mode-hook()
     (projectile-rails-mode)
-    (highlight-indentation-current-column-mode)
-    (add-to-list 'flycheck-disabled-checkers 'ruby-reek)
+    (add-to-list 'flycheck-disabled-checkers 'ruby-reek 'ruby-rubylint)
     (global-set-key (kbd "C-c d") 'insert-pry))
   (add-hook 'ruby-mode-hook 'my-ruby-mode-hook))
 
