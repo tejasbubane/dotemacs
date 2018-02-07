@@ -24,6 +24,7 @@
 (require 'anzu-config)
 (require 'dired-config)
 (require 'dumb-jump-config)
+(require 'editorconfig-config)
 (require 'ibuffer-config)
 (require 'ido-config)
 (require 'js2-config)
