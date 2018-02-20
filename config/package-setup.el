@@ -17,6 +17,7 @@
 (add-to-list 'package-selected-packages 'use-package)
 
 ;; Install packages if not available
+;; No need to give `require t` for each package
 (setq use-package-always-ensure t)
 
 (provide 'package-setup)

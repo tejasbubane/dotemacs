@@ -7,6 +7,7 @@
   (use-package ruby-hash-syntax
     :bind (("C-c h" . ruby-hash-syntax-toggle)))
   (use-package projectile-rails)
+  (use-package rvm)
 
   ;; Evaluate this after ruby-mode is loaded
   :config
@@ -18,6 +19,7 @@
   (defun my-ruby-mode-hook()
     (projectile-rails-mode)
     (add-to-list 'flycheck-disabled-checkers 'ruby-reek 'ruby-rubylint)
+    (rvm-activate-corresponding-ruby)
     (global-set-key (kbd "C-c d") 'insert-pry))
   (add-hook 'ruby-mode-hook 'my-ruby-mode-hook))
 
