@@ -1,5 +1,3 @@
-(use-package haml-mode
-  :config
-  (add-hook 'haml-mode-hook (rvm-activate-corresponding-ruby)))
+(use-package haml-mode)
 
 (provide 'haml-config)
