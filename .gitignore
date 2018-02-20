@@ -26,3 +26,5 @@ smex-items
 
 loaddefs.el
 custom.el
+
+tramp
