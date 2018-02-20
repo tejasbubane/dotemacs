@@ -25,6 +25,7 @@
 (require 'dired-config)
 (require 'dumb-jump-config)
 (require 'editorconfig-config)
+(require 'git-gutter-config)
 (require 'haml-config)
 (require 'ibuffer-config)
 (require 'ido-config)
