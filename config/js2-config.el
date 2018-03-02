@@ -17,7 +17,8 @@
     (prettier-js-mode)
     (setq-default
      js2-ignored-warnings
-     '("msg.no.side.effects" "msg.missing.semi" "msg.no.return.value" "msg.anon.no.return.value")))
+     '("msg.no.side.effects" "msg.missing.semi" "msg.no.return.value"
+       "msg.anon.no.return.value" "msg.extra.trailing.comma")))
   (add-hook 'js2-mode-hook 'my-js2-mode-hook))
 
 (provide 'js2-config)
