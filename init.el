@@ -54,6 +54,7 @@
 (require 'super-save-config)
 (require 'theme-font-config)
 (require 'uniquify-config)
+(require 'vue-config)
 (require 'web-config)
 (require 'whitespace-config)
 (require 'yaml-config)
