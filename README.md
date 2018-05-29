@@ -15,17 +15,9 @@ Clone this repo in `~/.emacs.d` and make sure you install the submodules:
 git clone --recursive git@github.com:tejasbubane/dotemacs.git .emacs.d
 ```
 
-Now just open emacs and use-package will install all packages and byte-compile them.
+Now just open emacs and `use-package` will install all packages and byte-compile them.
 
-
-# Submodules
-
-There are two submodules:
-
-* [use-package](https://github.com/jwiegley/use-package): The package manager. Instead of using from MELPA, I am using the direct github version.
-
-* [reason-mode](https://github.com/reasonml-editor/reason-mode): Major mode for ReasonML programming language. This package is not available on MELPA.
-
+If there are any issues with fresh install please feel free to open an issue.
 
 # Dependencies
 
