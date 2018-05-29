@@ -2,5 +2,5 @@
 # creator: Tejas Bubane <tejasbubane@gmail.com>
 # --
 export default function ${1:functionName}(${2:arg1}) {
-       return ${3:returnValue};
+  return ${3:returnValue};
 }

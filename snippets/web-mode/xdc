@@ -2,7 +2,7 @@
 # creator: Tejas Bubane <tejasbubane@gmail.com>
 # --
 export default class ${1:ClassName} {
-       constructor(${2:param}) {
-                                      $0
-                               }
+  constructor(${2:param}) {
+    $0
+  }
 }
