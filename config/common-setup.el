@@ -80,4 +80,10 @@
 (diminish 'isearch-mode)
 (diminish 'auto-revert-mode)
 
+;; New features in Emacs 26.1
+(add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+(add-to-list 'default-frame-alist '(ns-appearance . dark))
+(require 'pixel-scroll)
+(pixel-scroll-mode 1) ;; scroll smoothly using mouse-wheel
+
 (provide 'common-setup)

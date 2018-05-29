@@ -2,6 +2,7 @@
   :config
   (load-theme 'monokai t)
   (when (window-system)
-    (set-frame-font "Fira Code Light 13")))
+    (setq ns-use-thin-smoothing 't)
+    (set-frame-font "Fira Code Retina 13")))
 
 (provide 'theme-font-config)
