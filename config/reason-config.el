@@ -1,6 +1,3 @@
-;; Reason mode is not on Melpa, using it as a git submodule
-(add-to-list 'load-path (concat user-emacs-directory (convert-standard-filename "vendor/reason-mode")))
-
 (defun shell-cmd (cmd)
   "Returns the stdout output of a shell command or nil if the command returned
    an error"
@@ -20,16 +17,16 @@
   (when refmt-bin
     (setq refmt-command refmt-bin)))
 
-(require 'reason-mode)
-(require 'merlin)
-(defun my-reason-mode-hook()
-  (add-hook 'before-save-hook 'refmt-before-save)
-  (merlin-mode)
+(use-package reason-mode
+  :config
+  (require 'merlin)
+  (defun my-reason-mode-hook()
+    (add-hook 'before-save-hook 'refmt-before-save)
+    (merlin-mode)
   ;; Issue with emacs hanging
-  ;; https://github.com/haskell/haskell-mode/issues/377
-  (lambda () (electric-indent-local-mode -1)))
-(add-hook 'reason-mode-hook 'my-reason-mode-hook)
-
-(setq merlin-ac-setup t)
+    ;; https://github.com/haskell/haskell-mode/issues/377
+    (lambda () (electric-indent-local-mode -1)))
+  (add-hook 'reason-mode-hook 'my-reason-mode-hook)
+  (setq merlin-ac-setup t))
 
 (provide 'reason-config)

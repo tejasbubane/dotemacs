@@ -1,6 +1,0 @@
-[submodule "vendor/use-package"]
-	path = vendor/use-package
-	url = git@github.com:jwiegley/use-package.git
-[submodule "vendor/reason-mode"]
-	path = vendor/reason-mode
-	url = git@github.com:reasonml-editor/reason-mode.git
