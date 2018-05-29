@@ -78,5 +78,6 @@
 (diminish 'subword-mode)
 
 (diminish 'isearch-mode)
+(diminish 'auto-revert-mode)
 
 (provide 'common-setup)

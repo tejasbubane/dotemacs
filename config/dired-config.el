@@ -1,13 +1,5 @@
 (require 'dired)
 
-(use-package dired-details
-  :config
-  (setq-default dired-details-hidden-string "")
-  (dired-details-install))
-(use-package dired+
-  :config
-  (diredp-toggle-find-file-reuse-dir 1))
-
 ;; Also auto refresh dired, but be quiet about it
 (setq global-auto-revert-non-file-buffers t)
 (setq auto-revert-verbose nil)

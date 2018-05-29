@@ -19,6 +19,4 @@
 	   icomplete-mode))
   (funcall mode 1))
 
-(diminish 'auto-revert-mode)
-
 (provide 'window-setup)
