@@ -63,3 +63,6 @@
 ;; Utils
 (require 'lineutils)
 (require 'pathutils)
+
+;; Specials :)
+(require 'my-packages)
