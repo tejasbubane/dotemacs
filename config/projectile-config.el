@@ -6,6 +6,7 @@
     (setq projectile-rails-add-keywords nil))
 
   :diminish projectile-mode
+  :diminish projectile-rails-mode
 
   :config
   (projectile-global-mode)
