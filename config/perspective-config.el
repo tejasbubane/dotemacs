@@ -6,6 +6,7 @@
   (use-package persp-projectile)
 
   :config
-  (persp-mode))
+  (persp-mode)
+  (winner-mode))
 
 (provide 'perspective-config)
