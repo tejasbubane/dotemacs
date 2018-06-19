@@ -15,6 +15,7 @@
 
 (eval-when-compile
   (require 'use-package))
+(require 'diminish)                ;; to use :diminish
 
 ;; Install packages if not available
 ;; No need to give `require t` for each package
