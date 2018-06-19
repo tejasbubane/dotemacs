@@ -16,6 +16,7 @@
 (eval-when-compile
   (require 'use-package))
 (require 'diminish)                ;; to use :diminish
+(require 'bind-key)                ;; to use any :bind variant
 
 ;; Install packages if not available
 ;; No need to give `require t` for each package

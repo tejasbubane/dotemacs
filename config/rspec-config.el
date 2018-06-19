@@ -1,5 +1,5 @@
 (use-package rspec-mode
   :config
-  (add-hook 'rspec-mode-hook 'linum-mode))
+  :hook (rspec-mode . display-line-numbers-mode))
 
 (provide 'rspec-config)

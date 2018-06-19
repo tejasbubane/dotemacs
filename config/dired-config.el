@@ -1,3 +1,4 @@
+;; Cannot use use-package with pre-installed packages
 (require 'dired)
 
 ;; Also auto refresh dired, but be quiet about it
@@ -15,7 +16,7 @@
             (kill-buffer buffer)))
         (buffer-list)))
 
-# Reuse dired buffers
+;; Reuse dired buffers
 (put 'dired-find-alternate-file 'disabled nil)
 (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
                                         ; was dired-advertised-find-file
