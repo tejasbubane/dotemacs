@@ -3,10 +3,8 @@
    an error"
   (car (ignore-errors (apply 'process-lines (split-string cmd)))))
 
-(let* ((refmt-bin (or (shell-cmd "refmt ----where")
-                      (shell-cmd "which refmt")))
-       (merlin-bin (or (shell-cmd "ocamlmerlin ----where")
-                       (shell-cmd "which ocamlmerlin")))
+(let* ((refmt-bin (shell-cmd "which refmt"))
+       (merlin-bin (shell-cmd "which ocamlmerlin"))
        (merlin-base-dir (when merlin-bin
                           (replace-regexp-in-string "bin/ocamlmerlin$" "" merlin-bin))))
   ;; Add npm merlin.el to the emacs load path and tell emacs where to find ocamlmerlin
@@ -17,16 +15,18 @@
   (when refmt-bin
     (setq refmt-command refmt-bin)))
 
+(use-package merlin
+  :config
+  (setq merlin-ac-setup t))
+
 (use-package reason-mode
   :config
-  (require 'merlin)
   (defun my-reason-mode-hook()
     (add-hook 'before-save-hook 'refmt-before-save)
     (merlin-mode)
-  ;; Issue with emacs hanging
+    ;; Issue with emacs hanging
     ;; https://github.com/haskell/haskell-mode/issues/377
     (lambda () (electric-indent-local-mode -1)))
-  (add-hook 'reason-mode-hook 'my-reason-mode-hook)
-  (setq merlin-ac-setup t))
+  (add-hook 'reason-mode-hook 'my-reason-mode-hook))
 
 (provide 'reason-config)
