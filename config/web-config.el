@@ -1,6 +1,11 @@
 (use-package web-mode
   :mode ("\\.html?\\'" "\\.erb\\'" "\\.mustache\\'" "\\.css\\'" "\\.scss\\'")
 
+  :init
+  (use-package rainbow-mode
+    :diminish
+    :hook (css-mode html-mode js-mode js2-mode rjsx-mode haml-mode))
+
   :config
   (defun my-web-mode-hook ()
     ;; Hooks for Web mode
