@@ -37,6 +37,7 @@
   :config
   (flx-ido-mode 1)
   (setq ido-enable-flex-matching t
+        ido-use-filename-at-point nil
         ido-use-faces nil))
 
 ;; flx-mode might trigger emacs GC a lot of times - which makes completion slow
