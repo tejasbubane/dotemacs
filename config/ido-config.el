@@ -37,7 +37,19 @@
   :config
   (flx-ido-mode 1)
   (setq ido-enable-flex-matching t
-        ido-use-faces nil
-        gc-cons-threshold 20000000))
+        ido-use-faces nil))
+
+;; flx-mode might trigger emacs GC a lot of times - which makes completion slow
+;; Do not to run GC when minibuffer is active
+;; Ref: [1] https://bling.github.io/blog/2016/01/18/why-are-you-changing-gc-cons-threshold/
+;;      [2] https://github.com/lewang/flx/blob/master/README.md
+(defun my-minibuffer-setup-hook ()
+  (setq gc-cons-threshold most-positive-fixnum))
+
+(defun my-minibuffer-exit-hook ()
+  (setq gc-cons-threshold 800000))
+
+(add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
+(add-hook 'minibuffer-exit-hook #'my-minibuffer-exit-hook)
 
 (provide 'ido-config)
