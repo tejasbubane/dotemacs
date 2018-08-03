@@ -18,7 +18,8 @@
   (defun my-ruby-mode-hook()
     (projectile-rails-mode)
     (add-to-list 'flycheck-disabled-checkers 'ruby-reek 'ruby-rubylint)
-    (global-set-key (kbd "C-c d") 'insert-pry))
+    (global-set-key (kbd "C-c d") 'insert-pry)
+    (exec-path-from-shell-copy-env "GEM_PATH"))
   (add-hook 'ruby-mode-hook 'my-ruby-mode-hook))
 
 (provide 'ruby-config)
