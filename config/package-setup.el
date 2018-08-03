@@ -15,11 +15,13 @@
 
 (eval-when-compile
   (require 'use-package))
-(require 'diminish)                ;; to use :diminish
-(require 'bind-key)                ;; to use any :bind variant
 
 ;; Install packages if not available
 ;; No need to give `require t` for each package
 (setq use-package-always-ensure t)
+
+(use-package diminish) ;; to use :diminish from use-package macro
+
+(require 'bind-key) ;; to use any :bind variant
 
 (provide 'package-setup)
