@@ -12,14 +12,14 @@
   :config
   (setq ruby-use-smie 't)
   (setq ruby-align-chained-calls 't)
+  (exec-path-from-shell-copy-env "GEM_PATH")
   (defun insert-pry ()
     (interactive)
     (insert "binding.pry"))
   (defun my-ruby-mode-hook()
     (projectile-rails-mode)
     (add-to-list 'flycheck-disabled-checkers 'ruby-reek 'ruby-rubylint)
-    (global-set-key (kbd "C-c d") 'insert-pry)
-    (exec-path-from-shell-copy-env "GEM_PATH"))
+    (global-set-key (kbd "C-c d") 'insert-pry))
   (add-hook 'ruby-mode-hook 'my-ruby-mode-hook))
 
 (provide 'ruby-config)
