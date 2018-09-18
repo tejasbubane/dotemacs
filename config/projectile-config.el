@@ -10,6 +10,7 @@
 
   :config
   (projectile-global-mode)
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   (setq projectile-enable-caching t)
   (setq projectile-tags-command "ctags-exuberant -Re --languages=ruby --exclude=.git --exclude=log %s %s ."))
 
