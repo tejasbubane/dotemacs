@@ -47,6 +47,7 @@
 (require 'sql-config)
 (require 'super-save-config)
 (require 'theme-font-config)
+(require 'tramp-config)
 (require 'uniquify-config)
 (require 'vue-config)
 (require 'web-config)
