@@ -23,6 +23,7 @@
 (require 'git-gutter-config)
 (require 'git-timemachine-config)
 (require 'haml-config)
+(require 'haskell-config)
 (require 'ibuffer-config)
 (require 'ido-config)
 (require 'js2-config)
