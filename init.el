@@ -7,7 +7,6 @@
 (require 'package-setup)
 (require 'window-setup)
 (require 'common-setup)
-;;(require 'fira-code-setup)
 
 ;; Install flycheck here since this file is loaded before other mode-configs
 (require 'flycheck-config)
@@ -59,6 +58,7 @@
 ;; Utils
 (require 'lineutils)
 (require 'pathutils)
+(require 'fira-code-mode)
 
 ;; Specials :)
 (require 'my-packages)

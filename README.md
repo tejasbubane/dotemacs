@@ -24,9 +24,10 @@ If there are any issues with fresh install please feel free to open an issue.
 1. **Font** : The font I use is [Fira Code](https://github.com/tonsky/FiraCode).
    Make sure it is installed on your system.
    Otherwise emacs will throw an error on startup.
-   If you prefer to use some other font, change it [here](/config/theme-font-config.el).
-   Ligatures are configured [here](/config/fira-code-setup.el) - comment the entire thing out
-   if you plan not to use Fira-code.
+   If you prefer to use some other font, change it [here](config/theme-font-config.el).
+   Ligatures are configured [here](utils/fira-code-mode.el), but enabled only for Haskell-mode right now
+   and require Fira Code Symbol font installed from [here](https://github.com/tonsky/FiraCode/issues/211#issuecomment-239058632).
+   Comment the entire thing out if you plan not to use Fira-code.
 
 
 2. **rgrep**: `rg` is used for code searching. More about `rgrep` and installation instructions are
