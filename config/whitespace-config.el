@@ -9,7 +9,7 @@
         (newline-mark 10 [172 10]) ; 10 LINE FEED
         (tab-mark 9 [183 9] [92 9]) ; 9 TAB, MIDDLE DOT
         ))
-(setq whitespace-global-modes '(not org-mode web-mode "Web" emacs-lisp-mode))
+(setq whitespace-global-modes '(not org-mode web-mode "Web" emacs-lisp-mode markdown-mode))
 (global-whitespace-mode)
 
 ;; don't show in modeline - less clutter
