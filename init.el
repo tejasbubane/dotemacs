@@ -1,5 +1,7 @@
-(let ((configs (concat user-emacs-directory (convert-standard-filename "config/")))
+(let ((setup (concat user-emacs-directory (convert-standard-filename "setup/")))
+      (configs (concat user-emacs-directory (convert-standard-filename "config/")))
       (utils (concat user-emacs-directory (convert-standard-filename "utils/"))))
+  (add-to-list 'load-path setup)
   (add-to-list 'load-path configs)
   (add-to-list 'load-path utils))
 
