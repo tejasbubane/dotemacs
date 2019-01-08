@@ -30,3 +30,5 @@ custom.el
 tramp
 
 url/
+
+.last-package-update-day
