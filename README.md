@@ -7,12 +7,12 @@ This config uses the awesome [use-package](https://github.com/jwiegley/use-packa
 It will take care of fetching and installing all the packages on first load and byte-compiling them.
 Hence starting emacs for the first time will take some time, but the later ones should be blazing fast.
 
-Used and tested on the latest version of emacs.
+Being actively used and tested on the latest version of emacs.
 
-Clone this repo in `~/.emacs.d` and make sure you install the submodules:
+Clone this repo in `~/.emacs.d`:
 
 ```sh
-git clone --recursive git@github.com:tejasbubane/dotemacs.git .emacs.d
+cd ~/ && git clone git@github.com:tejasbubane/dotemacs.git .emacs.d
 ```
 
 Now just open emacs and `use-package` will install all packages and byte-compile them.
@@ -37,8 +37,14 @@ If there are any issues with fresh install please feel free to open an issue.
 
 # Update packages
 
+### Auto:
+
+Auto updates are configured. Once every `4 days` you will be prompted to perform upgrade of all installed packages.
+
+### Manual:
+
 `use-package` uses emacs' inbuilt [package.el](http://wikemacs.org/wiki/Package.el).
-So upgrading is just telling package.el to upgrade all packages.
+So upgrading is just telling `package.el` to upgrade all packages.
 
 * Open the list of package - `M-x package-list-packages`
 
@@ -67,7 +73,8 @@ https://www.masteringemacs.org/article/spotlight-use-package-a-declarative-confi
 http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/
 
 * General config (Theme, font, window-config, etc):
-https://github.com/larstvei/dot-emacs
+  - https://github.com/larstvei/dot-emacs
+  - https://www.youtube.com/playlist?list=PL9a5xOjVw3jajVLC-539iAZINvOpRhHfz
 
 * Prathamesh's dotemacs:
 https://github.com/prathamesh-sonpatki/dotemacs
@@ -75,6 +82,8 @@ https://github.com/prathamesh-sonpatki/dotemacs
 And some others I can't recollect.
 
 
-Blog: [http://foss-geek.blogspot.in/](http://foss-geek.blogspot.in/)
+
+
+Blog: [http://tejasbubane.github.io/](http://tejasbubane.github.io/)
 
 Twitter: [@tejasbubane](https://twitter.com/tejasbubane)
