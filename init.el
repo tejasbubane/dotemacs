@@ -29,6 +29,7 @@
 (require 'ido-config)
 (require 'js2-config)
 (require 'json-config)
+(require 'keyfreq-config)
 (require 'magit-config)
 (require 'markdown-config)
 (require 'multiple-cursors-config)
