@@ -43,6 +43,7 @@
 (require 'rjsx-config)
 (require 'rspec-config)
 (require 'ruby-config)
+(require 'scheme-config)
 (require 'sh-config)
 (require 'smartparens-config)
 (require 'sml-config)
