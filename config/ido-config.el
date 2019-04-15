@@ -6,10 +6,10 @@
       ido-enable-flex-matching t
       ido-create-new-buffer 'always
       ido-use-filename-at-point 'guess
-      ido-use-url-at-point t
       ido-max-prospects 10
       ido-use-virtual-buffers t
       ido-use-faces nil ;; disable ido faces to see flx highlights
+      ido-ignore-extensions t
       ido-file-extensions-order '(".rb" ".html.erb" "html" "yml" ".css" ".js" ".el"))
 (add-to-list 'ido-ignore-buffers "*Messages*" "*scratch*")
 
