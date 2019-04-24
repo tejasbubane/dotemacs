@@ -2,6 +2,7 @@
   :diminish smartparens-mode
   :hook ((js-mode . smartparens-mode)
          (ruby-mode . smartparens-mode)
-         (emacs-lisp-mode . smartparens-mode)))
+         (emacs-lisp-mode . smartparens-mode)
+         (scheme-mode . smartparens-mode)))
 
 (provide 'smartparens-config)
