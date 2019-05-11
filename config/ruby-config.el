@@ -12,6 +12,7 @@
   :config
   (setq ruby-use-smie 't)
   (setq ruby-align-chained-calls 't)
+  (setq ruby-insert-encoding-magic-comment nil)
   (exec-path-from-shell-copy-env "GEM_PATH")
   (defun insert-pry ()
     (interactive)
