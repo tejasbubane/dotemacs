@@ -1,9 +1,9 @@
 (use-package anzu
+  :diminish
   :bind
   (("M-%" . anzu-query-replace)
    ("C-M-%" . anzu-query-replace-regexp))
-
-  :config
-  (global-anzu-mode))
+  :hook
+  (after-init . global-anzu-mode))
 
 (provide 'anzu-config)

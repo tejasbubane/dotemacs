@@ -19,6 +19,7 @@
 (require 'anzu-config)
 (require 'dash-at-point-config)
 (require 'dired-config)
+(require 'dockerfile-config)
 (require 'dumb-jump-config)
 (require 'editorconfig-config)
 (require 'git-gutter-config)
