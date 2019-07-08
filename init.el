@@ -37,6 +37,7 @@
 (require 'org-config)
 (require 'perspective-config)
 (require 'projectile-config)
+(require 'prolog-mode-config)
 (require 'reason-config)
 (require 'recentf-config)
 (require 'restclient-config)
@@ -63,6 +64,7 @@
 ;; Utils
 (require 'lineutils)
 (require 'pathutils)
+(require 'fira-code-mode)
 (require 'fira-code-mode)
 
 ;; Specials :)
