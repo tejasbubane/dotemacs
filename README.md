@@ -1,7 +1,8 @@
 [![](https://img.shields.io/badge/emacs-config-brightgreen.svg)](https://github.com/tejasbubane/dotemacs)
 
+# Tejas' Emacs Configuration
 
-# Usage
+## Usage
 
 This config uses the awesome [use-package](https://github.com/jwiegley/use-package).
 It will take care of fetching and installing all the packages on first load and byte-compiling them.
@@ -19,7 +20,7 @@ Now just open emacs and `use-package` will install all packages and byte-compile
 
 If there are any issues with fresh install please feel free to open an issue.
 
-# Dependencies
+## Dependencies
 
 1. **Font** : The font I use is [Fira Code](https://github.com/tonsky/FiraCode).
    Make sure it is installed on your system.
@@ -35,7 +36,7 @@ If there are any issues with fresh install please feel free to open an issue.
    Invoke it using `M-x rg` more info - [rg.el](https://github.com/Wilfred/ag.el).
 
 
-# Update packages
+## Update packages
 
 ### Auto:
 
@@ -59,7 +60,7 @@ git submodule update --remote
 ```
 
 
-# Credits
+## Credits
 
 My config has bits and pieces taken from these resources:
 
@@ -81,9 +82,9 @@ https://github.com/prathamesh-sonpatki/dotemacs
 
 And some others I can't recollect.
 
+___
 
 
+* Blog: [http://tejasbubane.github.io/](http://tejasbubane.github.io/)
 
-Blog: [http://tejasbubane.github.io/](http://tejasbubane.github.io/)
-
-Twitter: [@tejasbubane](https://twitter.com/tejasbubane)
+* Twitter: [@tejasbubane](https://twitter.com/tejasbubane)
