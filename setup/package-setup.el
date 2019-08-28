@@ -37,4 +37,10 @@
   (setq auto-package-update-hide-results t)
   (auto-package-update-maybe))
 
+;; Fix for issue: package-install-from-archive: https://elpa.gnu.org/packages/spinner-1.7.3.el: Bad Request
+;; Taken from: https://www.reddit.com/r/orgmode/comments/cvmjjr/workaround_for_tlsrelated_bad_request_and_package/
+(when (and (>= libgnutls-version 30603)
+           (version<= emacs-version "26.2"))
+  (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
+
 (provide 'package-setup)
