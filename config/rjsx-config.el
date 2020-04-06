@@ -3,10 +3,7 @@
 
   :config
   (defun my-rjsx-mode-hook ()
-    (custom-set-faces
-     ;; Make classNames italic
-     '(rjsx-attr ((t (:inherit font-lock-variable-name-face
-                               :slant italic :height 1.15 :family "Inconsolata"))))))
+    (add-to-list 'ac-modes 'rjsx-mode))
   (add-hook 'rjsx-mode-hook 'my-rjsx-mode-hook))
 
 (provide 'rjsx-config)

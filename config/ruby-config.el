@@ -23,6 +23,7 @@
   (defun my-ruby-mode-hook()
     (projectile-rails-mode)
     (add-to-list 'flycheck-disabled-checkers 'ruby-reek 'ruby-rubylint)
+    (add-to-list 'ac-modes 'ruby-mode)
     (global-set-key (kbd "C-c d") 'insert-pry)
     (global-set-key (kbd "C-c f r") 'insert-frozen-string-literal))
   (add-hook 'ruby-mode-hook 'my-ruby-mode-hook))
