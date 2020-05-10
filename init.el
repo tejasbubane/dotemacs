@@ -66,7 +66,6 @@
 (require 'lineutils)
 (require 'pathutils)
 (require 'fira-code-mode)
-(require 'fira-code-mode)
 
 ;; Specials :)
 (require 'my-packages)
