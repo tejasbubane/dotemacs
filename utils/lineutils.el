@@ -42,6 +42,6 @@
   (newline)
   (yank)
 )
-(global-set-key (kbd "C-c r") 'duplicate-line)
+(global-set-key (kbd "C-c C-r") 'duplicate-line)
 
 (provide 'lineutils)
