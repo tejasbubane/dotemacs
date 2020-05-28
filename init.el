@@ -23,6 +23,7 @@
 (require 'dockerfile-config)
 (require 'dumb-jump-config)
 (require 'editorconfig-config)
+(require 'elixir-config)
 (require 'git-gutter-config)
 (require 'git-timemachine-config)
 (require 'haml-config)
