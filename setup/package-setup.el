@@ -1,9 +1,11 @@
 (require 'package)
-(setq package-enable-at-startup nil)
-(setq package-archives '(("melpa" . "https://melpa.org/packages/")
-                         ("org" . "http://orgmode.org/elpa/")
-                         ("gnu" . "https://elpa.gnu.org/packages/")))
 
+(customize-set-variable 'package-archives
+                        (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/")))
+
+(setq package-enable-at-startup nil)
+(setq package-check-signature nil)
+(setq byte-compile-warnings '(cl-functions))
 (setq package--init-file-ensured t)
 (package-initialize)
 
