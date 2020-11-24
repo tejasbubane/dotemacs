@@ -26,15 +26,13 @@ If there are any issues with fresh install please feel free to open an issue.
    Make sure it is installed on your system.
    Otherwise emacs will throw an error on startup.
    If you prefer to use some other font, change it [here](config/theme-font-config.el).
-   Ligatures are configured [here](utils/fira-code-mode.el), but enabled only for Haskell-mode right now
-   and require Fira Code Symbol font installed from [here](https://github.com/tonsky/FiraCode/issues/211#issuecomment-239058632).
-   Comment the entire thing out if you plan not to use Fira-code.
-
+   Ligatures are configured [here](utils/fira-code-mode.el). They use Cairo + [ligature.el](https://github.com/mickeynp/ligature.el)
+   and hence require Emacs 27.1+. For older versions use one of the methods [here](https://github.com/tonsky/FiraCode/wiki/Emacs-instructions).
+   Or just comment the entire thing out if you plan not to use Fira-code.
 
 2. **rgrep**: `rg` is used for code searching. More about `rgrep` and installation instructions are
    [here](https://github.com/BurntSushi/ripgrep).
    Invoke it using `M-x rg` more info - [rg.el](https://github.com/Wilfred/ag.el).
-
 
 ## Update packages
 

@@ -1,9 +1,11 @@
 (let ((setup (concat user-emacs-directory (convert-standard-filename "setup/")))
       (configs (concat user-emacs-directory (convert-standard-filename "config/")))
-      (utils (concat user-emacs-directory (convert-standard-filename "utils/"))))
+      (utils (concat user-emacs-directory (convert-standard-filename "utils/")))
+      (vendor (concat user-emacs-directory (convert-standard-filename "vendor/"))))
   (add-to-list 'load-path setup)
   (add-to-list 'load-path configs)
-  (add-to-list 'load-path utils))
+  (add-to-list 'load-path utils)
+  (add-to-list 'load-path vendor))
 
 ;; Setups
 (require 'package-setup)
@@ -65,9 +67,10 @@
 (require 'yaml-config)
 (require 'yasnippet-config)
 
-;; Utils
+;; Utils + Vendor
 (require 'lineutils)
 (require 'pathutils)
+(require 'ligature)
 (require 'fira-code-mode)
 
 ;; Specials :)
