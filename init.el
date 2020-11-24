@@ -18,6 +18,7 @@
 (require 'ace-jump-config)
 (require 'anzu-config)
 (require 'clojure-config)
+(require 'coffeescript-config)
 (require 'dash-at-point-config)
 (require 'dired-config)
 (require 'dockerfile-config)
