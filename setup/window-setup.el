@@ -17,6 +17,7 @@
 	   global-auto-revert-mode
 	   iswitchb-mode
 	   icomplete-mode))
-  (funcall mode 1))
+  (funcall mode 1)
+  (toggle-frame-fullscreen))
 
 (provide 'window-setup)
