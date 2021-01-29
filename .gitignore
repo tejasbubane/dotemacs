@@ -34,3 +34,5 @@ url/
 .last-package-update-day
 
 transient
+
+.lsp-session*

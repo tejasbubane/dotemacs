@@ -50,6 +50,7 @@
 (require 'rjsx-config)
 (require 'rspec-config)
 (require 'ruby-config)
+(require 'rust-config)
 (require 'scheme-config)
 (require 'sh-config)
 (require 'smartparens-config)
