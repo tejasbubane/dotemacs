@@ -36,3 +36,5 @@ url/
 transient
 
 .lsp-session*
+
+eln-cache
