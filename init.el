@@ -55,7 +55,6 @@
 (require 'sh-config)
 (require 'smartparens-config)
 (require 'sml-config)
-(require 'spaceline-mode-config)
 (require 'sql-config)
 (require 'super-save-config)
 (require 'theme-font-config)
