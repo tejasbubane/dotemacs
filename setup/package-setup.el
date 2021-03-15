@@ -1,5 +1,7 @@
 (require 'package)
 
+(setq comp-deferred-compilation t)
+
 (customize-set-variable 'package-archives
                         (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/")))
 
