@@ -7,6 +7,7 @@
   (use-package ruby-hash-syntax
     :bind (("C-c h" . ruby-hash-syntax-toggle)))
   (use-package projectile-rails)
+  (use-package chruby)
 
   ;; Evaluate this after ruby-mode is loaded
   :config
@@ -22,6 +23,7 @@
     (insert "# frozen_string_literal: true\n\n"))
   (defun my-ruby-mode-hook()
     (projectile-rails-mode)
+    (chruby-use-corresponding)
     (add-to-list 'flycheck-disabled-checkers 'ruby-reek 'ruby-rubylint)
     (add-to-list 'ac-modes 'ruby-mode)
     (global-set-key (kbd "C-c d") 'insert-pry)
