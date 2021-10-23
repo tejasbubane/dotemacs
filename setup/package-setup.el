@@ -1,11 +1,11 @@
 (require 'package)
 
-(if (and (fboundp 'native-comp-available-p)
-         (native-comp-available-p)) ;; check if native compilation is available
-    (progn
-      (setq comp-deferred-compilation t) ;; enable deferred compilation for gcc emacs 28
-      (setq native-comp-async-report-warnings-errors nil) ;; hide warnings buffer from popping up
-))
+;; (if (and (fboundp 'native-comp-available-p)
+;;          (native-comp-available-p)) ;; check if native compilation is available
+;;     (progn
+;;       (setq comp-deferred-compilation t) ;; enable deferred compilation for gcc emacs 28
+;;       (setq native-comp-async-report-warnings-errors nil) ;; hide warnings buffer from popping up
+;; ))
 
 (customize-set-variable 'package-archives
                         (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/")))

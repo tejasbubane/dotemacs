@@ -27,6 +27,7 @@
 (require 'dumb-jump-config)
 (require 'editorconfig-config)
 (require 'elixir-config)
+(require 'flyspell-config)
 (require 'git-gutter-config)
 (require 'git-timemachine-config)
 (require 'haml-config)

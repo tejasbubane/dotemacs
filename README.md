@@ -34,6 +34,11 @@ If there are any issues with fresh install please feel free to open an issue.
    [here](https://github.com/BurntSushi/ripgrep).
    Invoke it using `M-x rg` more info - [rg.el](https://github.com/Wilfred/ag.el).
 
+3. **hunspell**: [hunspell](https://hunspell.github.io/) and its dictionaries are required
+   for [flyspell-mode](https://www.emacswiki.org/emacs/FlySpell) to work. Install them with your package manager.
+   For example in archlinux: `sudo pacman -S hunspell hunspell-en_us hunspell-en_gb`
+
+
 ## Update packages
 
 ### Auto:
