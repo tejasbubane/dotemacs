@@ -18,6 +18,6 @@
 	   iswitchb-mode
 	   icomplete-mode))
   (funcall mode 1)
-  (toggle-frame-fullscreen))
+  (toggle-frame-maximized))
 
 (provide 'window-setup)
