@@ -5,6 +5,9 @@
   :init
   (use-package persp-projectile)
 
+  :custom
+  (persp-mode-prefix-key (kbd "C-x x"))
+
   :config
   (persp-mode)
   (winner-mode))

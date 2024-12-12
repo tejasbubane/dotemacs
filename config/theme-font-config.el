@@ -4,6 +4,6 @@
   (load-theme 'darkokai t)
   (when (window-system)
     (setq ns-use-thin-smoothing 't)
-    (set-frame-font "Fira Code Retina 10")))
+    (set-frame-font "Fira Code Retina 8")))
 
 (provide 'theme-font-config)
