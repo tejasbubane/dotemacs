@@ -1,11 +1,9 @@
 (let ((setup (concat user-emacs-directory (convert-standard-filename "setup/")))
       (configs (concat user-emacs-directory (convert-standard-filename "config/")))
-      (utils (concat user-emacs-directory (convert-standard-filename "utils/")))
-      (vendor (concat user-emacs-directory (convert-standard-filename "vendor/"))))
+      (utils (concat user-emacs-directory (convert-standard-filename "utils/"))))
   (add-to-list 'load-path setup)
   (add-to-list 'load-path configs)
-  (add-to-list 'load-path utils)
-  (add-to-list 'load-path vendor))
+  (add-to-list 'load-path utils))
 
 ;; Setups
 (require 'package-setup)
@@ -37,6 +35,7 @@
 (require 'js2-config)
 (require 'json-config)
 (require 'keyfreq-config)
+(require 'ligature-config)
 (require 'magit-config)
 (require 'markdown-config)
 (require 'multiple-cursors-config)
@@ -71,8 +70,6 @@
 ;; Utils + Vendor
 (require 'lineutils)
 (require 'pathutils)
-(require 'ligature)
-(require 'fira-code-mode)
 
 ;; Specials :)
 (require 'my-packages)
