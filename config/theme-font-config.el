@@ -1,9 +1,9 @@
-(use-package darkokai-theme
+(use-package monokai-theme
+  :ensure t
   :config
-  (setq darkokai-mode-line-padding 1)
-  (load-theme 'darkokai t)
+  (load-theme 'monokai t)
   (when (window-system)
     (setq ns-use-thin-smoothing 't)
-    (set-frame-font "Fira Code Retina 8")))
+    (set-frame-font "Fira Code Retina 12")))
 
 (provide 'theme-font-config)
