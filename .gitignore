@@ -38,3 +38,5 @@ transient
 .lsp-session*
 
 eln-cache
+
+tree-sitter

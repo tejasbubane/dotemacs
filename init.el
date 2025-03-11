@@ -9,6 +9,7 @@
 (require 'package-setup)
 (require 'window-setup)
 (require 'common-setup)
+(require 'treesit-auto-config)
 
 ;; Install flycheck here since this file is loaded before other mode-configs
 (require 'flycheck-config)
