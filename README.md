@@ -43,7 +43,7 @@ If there are any issues with fresh install please feel free to open an issue.
 
 ### Auto:
 
-Auto updates are configured. Once every `4 days` you will be prompted to perform upgrade of all installed packages.
+Auto updates are configured. Once every `4 days` you will be prompted to perform upgrade of all installed packages. You can accept or skip them.
 
 ### Manual:
 
@@ -62,6 +62,13 @@ Git submodules (use-package itself and reason-mode) can be updated by running
 git submodule update --remote
 ```
 
+## Treesitter modes
+
+[Emacs 29+ introduced tree-sitter](https://emacs-tree-sitter.github.io/) which is better at parsing programming languages.
+There is a neat package [treesit-auto.el](https://github.com/renzmann/treesit-auto/) which automates everything related to treesitter modes.
+It fetches language grammars, enables treesitter major modes for language whenever possible and falls back to normal modes when it cannot.
+
+When you open a language file for the first time, you will be prompted to install the language grammar. It will be compiled and stored in `.emacs.d/tree-sitter` and will be used for all future buffers.
 
 ## Credits
 
