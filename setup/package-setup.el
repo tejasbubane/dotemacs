@@ -8,7 +8,9 @@
 ;; ))
 
 (customize-set-variable 'package-archives
-                        (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/")))
+                        (add-to-list 'package-archives
+                                     '("melpa" . "https://melpa.org/packages/")
+                                     '("nongnu" . "https://elpa.nongnu.org/nongnu/")))
 
 (setq package-enable-at-startup nil)
 (setq package-check-signature nil)
