@@ -1,3 +1,19 @@
+(defun insert-irb ()
+    (interactive)
+    (insert "binding.irb"))
+
+(defun insert-frozen-string-literal ()
+  (interactive)
+  (insert "# frozen_string_literal: true\n\n"))
+
+(defun my-ruby-mode-hook()
+  (projectile-rails-mode)
+  (chruby-use-corresponding)
+  (add-to-list 'flycheck-disabled-checkers 'ruby-reek 'ruby-rubylint)
+  (add-to-list 'ac-modes 'ruby-mode)
+  (global-set-key (kbd "C-c d") 'insert-irb)
+  (global-set-key (kbd "C-c f r") 'insert-frozen-string-literal))
+
 (use-package ruby-mode
   :mode ("\\.\\(rb\\|ru\\|builder\\|rake\\|thor\\|gemspec\\)\\'"
          "\\(rake\\|thor\\|guard\\|gem\\|cap\\|vagrant\\)file\\'")
@@ -11,23 +27,15 @@
 
   ;; Evaluate this after ruby-mode is loaded
   :config
-  (setq ruby-use-smie 't)
   (setq ruby-align-chained-calls 't)
   (setq ruby-insert-encoding-magic-comment nil)
   (exec-path-from-shell-copy-env "GEM_PATH")
-  (defun insert-pry ()
-    (interactive)
-    (insert "binding.pry"))
-  (defun insert-frozen-string-literal ()
-    (interactive)
-    (insert "# frozen_string_literal: true\n\n"))
-  (defun my-ruby-mode-hook()
-    (projectile-rails-mode)
-    (chruby-use-corresponding)
-    (add-to-list 'flycheck-disabled-checkers 'ruby-reek 'ruby-rubylint)
-    (add-to-list 'ac-modes 'ruby-mode)
-    (global-set-key (kbd "C-c d") 'insert-pry)
-    (global-set-key (kbd "C-c f r") 'insert-frozen-string-literal))
   (add-hook 'ruby-mode-hook 'my-ruby-mode-hook))
+
+(use-package ruby-ts-mode
+  :config
+  (add-to-list 'ac-modes 'ruby-ts-mode)
+  (exec-path-from-shell-copy-env "GEM_PATH")
+  (add-hook 'ruby-ts-mode-hook 'my-ruby-mode-hook))
 
 (provide 'ruby-config)
